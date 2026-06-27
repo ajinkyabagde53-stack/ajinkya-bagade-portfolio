@@ -629,3 +629,146 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
             </div>
             <div class="email-slide-meta">
               <div class="email-slide-tag">Property Campaign</div>
+              
+              <div class="email-slide-title">Marwick — Listing Campaign</div>
+              <div class="email-slide-desc">Editorial campaign email for the Marwick listing. Built to communicate luxury positioning and drive direct buyer enquiries.</div>
+              <a href="emails/marwick.html" target="_blank" class="email-view-btn">View Full Email ↗</a>
+            </div>
+          </div>
+
+          <div class="email-slide">
+            <div class="email-frame-wrap">
+              <iframe src="emails/genstar.html" scrolling="yes" loading="lazy"></iframe>
+            </div>
+            <div class="email-slide-meta">
+              <div class="email-slide-tag">Property Campaign</div>
+              <div class="email-slide-title">Genstar — Listing Campaign</div>
+              <div class="email-slide-desc">Property campaign email for Genstar. Positioned to highlight value and drive prospective buyer engagement.</div>
+              <a href="emails/genstar.html" target="_blank" class="email-view-btn">View Full Email ↗</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button class="carousel-arrow" id="emailNext" onclick="moveEmail(1)">&#8250;</button>
+    </div>
+    <div class="carousel-dots" id="emailDots"></div>
+  </div>
+  <footer><p>© 2026 Ajinkya Bagade</p><div class="footer-dot"></div><p>Digital Marketing Executive</p></footer>
+</div>
+
+<!-- ═══ BLOGS ═══ -->
+<div class="page" id="page-blogs">
+  <div class="page-hero">
+    <div class="dot-grid"></div>
+    <div style="max-width:1100px;margin:0 auto;position:relative;">
+      <div class="page-hero-label">Writing</div>
+      <div class="page-hero-title">Blogs</div>
+      <div class="page-hero-sub">Thoughts on marketing, brand building, content strategy and the work behind the work.</div>
+    </div>
+  </div>
+  <div class="blogs-list">
+    <a class="blog-card" href="https://wanderwitty.wordpress.com/2025/06/15/agentic-ai-vs-traditional-seo/" target="_blank">
+      <div>
+        <div class="blog-meta"><span class="blog-cat">AI &amp; Marketing</span><div class="blog-dot"></div><span class="blog-date">June 15, 2025</span></div>
+        <div class="blog-title">Agentic AI vs Traditional SEO</div>
+        <div class="blog-excerpt">80% of consumers now rely on AI-generated results for at least 40% of their searches. Traditional SEO is facing its most existential threat yet — and the marketers who understand what's replacing it will be the ones still standing.</div>
+        <div class="blog-read-more">Read Article →</div>
+      </div>
+      <div class="blog-arrow">→</div>
+    </a>
+    <a class="blog-card" href="https://novelsignaturehomes.com/blog/woodland-heights-houston-the-neighborhood-that-rewards-the-right-buyer/" target="_blank">
+      <div>
+        <div class="blog-meta"><span class="blog-cat">Real Estate</span><div class="blog-dot"></div><span class="blog-date">Novel Signature Homes</span></div>
+        <div class="blog-title">Woodland Heights, Houston — The Neighborhood That Rewards the Right Buyer</div>
+        <div class="blog-excerpt">A deep dive into one of Houston's most character-rich neighborhoods — why Woodland Heights continues to attract discerning buyers and what makes it worth a closer look.</div>
+        <div class="blog-read-more">Read Article →</div>
+      </div>
+      <div class="blog-arrow">→</div>
+    </a>
+    <a class="blog-card" href="https://wanderwitty.wordpress.com/" target="_blank">
+      <div>
+        <div class="blog-meta"><span class="blog-cat">More Writing</span><div class="blog-dot"></div><span class="blog-date">wanderwitty.wordpress.com</span></div>
+        <div class="blog-title">View All Posts on WanderWitty</div>
+        <div class="blog-excerpt">More articles on marketing, travel, brand strategy and everything in between — on my personal blog.</div>
+        <div class="blog-read-more">Visit Blog →</div>
+      </div>
+      <div class="blog-arrow">→</div>
+    </a>
+  </div>
+  <footer><p>© 2026 Ajinkya Bagade</p><div class="footer-dot"></div><p>Digital Marketing Executive</p></footer>
+</div>
+
+<script>
+const cursor = document.getElementById('cursor');
+const glow = document.getElementById('cursorGlow');
+document.addEventListener('mousemove', e => {
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
+  glow.style.left = e.clientX + 'px';
+  glow.style.top = e.clientY + 'px';
+});
+document.querySelectorAll('button,a,.case-card,.blog-card,.creative-card,.brochure-card').forEach(el => {
+  el.addEventListener('mouseenter', () => { cursor.style.width='28px'; cursor.style.height='28px'; cursor.style.opacity='0.5'; });
+  el.addEventListener('mouseleave', () => { cursor.style.width='12px'; cursor.style.height='12px'; cursor.style.opacity='1'; });
+});
+
+const pages = ['home','cases','creatives','emails','blogs'];
+function showPage(id) {
+  pages.forEach(p => {
+    const el = document.getElementById('page-' + p);
+    const btn = document.querySelector(`[onclick="showPage('${p}')"]`);
+    if (el) el.classList.remove('active');
+    if (btn) btn.classList.remove('active');
+  });
+  const target = document.getElementById('page-' + id);
+  const activeBtn = document.querySelector(`[onclick="showPage('${id}')"]`);
+  if (target) target.classList.add('active');
+  if (activeBtn) activeBtn.classList.add('active');
+  window.scrollTo(0,0);
+  observeReveals();
+}
+
+function observeReveals() {
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal:not(.visible)').forEach(el => obs.observe(el));
+}
+observeReveals();
+
+function toggleCase(card) {
+  const expand = card.querySelector('.case-expand');
+  const btn = card.querySelector('.toggle-btn');
+  if (!expand) return;
+  const isOpen = expand.classList.contains('open');
+  document.querySelectorAll('.case-expand.open').forEach(e => { e.classList.remove('open'); e.closest('.case-card').querySelector('.toggle-btn').textContent='Read More ↓'; });
+  if (!isOpen) { expand.classList.add('open'); if (btn) btn.textContent = 'Close ↑'; }
+}
+
+let emailIndex = 0;
+const emailSlides = document.querySelectorAll('.email-slide');
+const emailTrack = document.getElementById('emailTrack');
+const emailDots = document.getElementById('emailDots');
+if (emailDots) {
+  emailSlides.forEach((_,i) => {
+    const dot = document.createElement('button');
+    dot.className = 'carousel-dot' + (i===0?' active':'');
+    dot.onclick = () => goEmail(i);
+    emailDots.appendChild(dot);
+  });
+}
+function goEmail(n) {
+  emailIndex = n;
+  if (emailTrack) emailTrack.style.transform = `translateX(-${emailIndex * 100}%)`;
+  document.querySelectorAll('.carousel-dot').forEach((d,i) => d.classList.toggle('active', i===emailIndex));
+  const prev = document.getElementById('emailPrev');
+  const next = document.getElementById('emailNext');
+  if (prev) prev.disabled = emailIndex === 0;
+  if (next) next.disabled = emailIndex === emailSlides.length - 1;
+}
+function moveEmail(dir) { goEmail(Math.max(0, Math.min(emailSlides.length-1, emailIndex+dir))); }
+goEmail(0);
+</script>
+</body>
+</html>
