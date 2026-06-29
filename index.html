@@ -195,6 +195,31 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
 .footer-dot{width:4px;height:4px;border-radius:50%;background:var(--teal-light);opacity:0.4;}
 /* ANIMATIONS */
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+/* CASE 02 — VISUAL COMPONENTS */
+.wip-tag{font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;background:rgba(212,148,74,0.1);border:1px solid rgba(212,148,74,0.35);color:#d4944a;padding:4px 12px;border-radius:2px;}
+.phase-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(29,158,117,0.1);border:1px solid rgba(29,158,117,0.1);border-radius:4px;overflow:hidden;margin-bottom:20px;}
+.phase-block{background:rgba(10,26,21,0.95);padding:16px 14px;position:relative;}
+.phase-block::after{content:'→';position:absolute;right:-10px;top:50%;transform:translateY(-50%);color:rgba(29,158,117,0.3);font-size:12px;z-index:2;}
+.phase-block:last-child::after{display:none;}
+.ph-num{font-size:9px;letter-spacing:2px;color:rgba(29,158,117,0.5);margin-bottom:6px;text-transform:uppercase;}
+.ph-icon{font-size:20px;margin-bottom:8px;display:block;}
+.ph-label{font-size:12px;font-weight:500;color:#e0ede8;margin-bottom:4px;line-height:1.3;}
+.ph-sub{font-size:10px;color:var(--gray);line-height:1.5;}
+.pillars-label{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(29,158,117,0.5);margin-bottom:10px;}
+.pillars-grid{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;}
+.pillar{display:flex;align-items:center;gap:7px;background:rgba(13,107,84,0.1);border:1px solid rgba(29,158,117,0.15);border-radius:3px;padding:7px 12px;font-size:12px;color:#b0c8be;}
+.pillar-icon{font-size:14px;}
+.c02-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px;}
+.c02-metric{background:rgba(13,107,84,0.08);border:1px solid rgba(29,158,117,0.14);border-radius:4px;padding:14px;position:relative;overflow:hidden;}
+.c02-metric::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--teal-light),transparent);}
+.c02-platform{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:8px;}
+.c02-num{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:300;color:var(--teal-pale);line-height:1;}
+.c02-unit{font-size:11px;color:var(--gray);margin-top:2px;margin-bottom:8px;}
+.c02-subs{display:flex;flex-direction:column;gap:3px;}
+.c02-sub{font-size:10px;color:rgba(138,173,160,0.6);display:flex;justify-content:space-between;}
+.c02-sub span{color:rgba(200,239,227,0.5);}
+.c02-organic{margin-top:10px;padding-top:8px;border-top:1px solid rgba(29,158,117,0.1);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(29,158,117,0.5);}
+@media(max-width:768px){.phase-strip{grid-template-columns:1fr;}.c02-metrics{grid-template-columns:1fr;}}
 @media(max-width:768px){
   nav{padding:0 24px;}
   .nav-links{gap:0;}
@@ -330,13 +355,77 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
     <div class="case-card reveal" onclick="toggleCase(this)">
       <div class="case-num">02</div>
       <div class="case-content">
-        <div class="case-tag-row"><span class="c-tag">Social Media</span><span class="c-tag">Content</span></div>
-        <div class="case-title">Revamping Social Media from the Ground Up</div>
-        <div class="case-body">The brand's social channels were inconsistent — no rhythm, no voice, no structure. I rebuilt the entire approach and the results followed.</div>
+        <div class="case-tag-row"><span class="c-tag">Content Strategy</span><span class="c-tag">Creative Direction</span><span class="c-tag">Social Media</span><span class="wip-tag">↻ Work in Progress</span></div>
+        <div class="case-title">Building a Content Engine from Zero — NSH</div>
+        <div class="case-body">Inherited channels with no marketing content and no plan. Built the strategy, directed original shoots, and grew all three platforms entirely through organic content.</div>
         <div class="case-expand">
-          <p>Rebuilt the content approach from scratch — new formats, a defined brand voice and a creative pipeline that kept the team producing without burning out. Introduced content briefs for every post and a review process that kept quality consistent.</p>
-          <div class="case-result-pill">📈 11K+ reach — highest since launch in 2024</div>
-          <div class="tools-row"><span class="tool">Figma</span><span class="tool">Canva</span><span class="tool">Meta Business Suite</span><span class="tool">Google Analytics</span></div>
+          <!-- Phase strip -->
+          <div class="phase-strip">
+            <div class="phase-block">
+              <div class="ph-num">Phase 01</div>
+              <span class="ph-icon">🖼️</span>
+              <div class="ph-label">Elevate & Plan</div>
+              <div class="ph-sub">MLS renders repurposed for social. Content calendar built to maintain consistency.</div>
+            </div>
+            <div class="phase-block">
+              <div class="ph-num">Phase 02</div>
+              <span class="ph-icon">🎬</span>
+              <div class="ph-label">Pivot to Video</div>
+              <div class="ph-sub">Post-Andromeda. Drone acquired, shoots directed, vendor sessions organised.</div>
+            </div>
+            <div class="phase-block">
+              <div class="ph-num">Phase 03</div>
+              <span class="ph-icon">🛋️</span>
+              <div class="ph-label">Staging & Scale</div>
+              <div class="ph-sub">Property staging now unlocking premium content for website and socials.</div>
+            </div>
+          </div>
+          <!-- Content types -->
+          <div class="pillars-label">Content Types</div>
+          <div class="pillars-grid">
+            <div class="pillar"><span class="pillar-icon">🖼️</span> Renders</div>
+            <div class="pillar"><span class="pillar-icon">🚁</span> Drone Footage</div>
+            <div class="pillar"><span class="pillar-icon">📸</span> Photography</div>
+            <div class="pillar"><span class="pillar-icon">⏱️</span> Timelapses</div>
+            <div class="pillar"><span class="pillar-icon">🎞️</span> Render Showreels</div>
+            <div class="pillar"><span class="pillar-icon">🎙️</span> Video Testimonials</div>
+            <div class="pillar"><span class="pillar-icon">🛋️</span> Staging Shoots</div>
+          </div>
+          <!-- Metrics -->
+          <div class="c02-metrics">
+            <div class="c02-metric">
+              <div class="c02-platform">YouTube</div>
+              <div class="c02-num">9.8K</div>
+              <div class="c02-unit">Views</div>
+              <div class="c02-subs">
+                <div class="c02-sub">Subscribers <span>238</span></div>
+                <div class="c02-sub">Watch time <span>23.6 hrs</span></div>
+              </div>
+              <div class="c02-organic">100% Organic</div>
+            </div>
+            <div class="c02-metric">
+              <div class="c02-platform">Instagram</div>
+              <div class="c02-num">37.6K</div>
+              <div class="c02-unit">Views</div>
+              <div class="c02-subs">
+                <div class="c02-sub">Reach <span>4.3K</span></div>
+                <div class="c02-sub">Interactions <span>1.7K</span></div>
+              </div>
+              <div class="c02-organic">100% Organic</div>
+            </div>
+            <div class="c02-metric">
+              <div class="c02-platform">Facebook</div>
+              <div class="c02-num">5.8K</div>
+              <div class="c02-unit">Views</div>
+              <div class="c02-subs">
+                <div class="c02-sub">Viewers <span>2.6K</span></div>
+                <div class="c02-sub">Interactions <span>170</span></div>
+              </div>
+              <div class="c02-organic">100% Organic</div>
+            </div>
+          </div>
+          <div class="case-result-pill">📈 Zero paid spend across all channels</div>
+          <div class="tools-row"><span class="tool">Content Strategy</span><span class="tool">Creative Direction</span><span class="tool">Drone Production</span><span class="tool">Instagram</span><span class="tool">Facebook</span><span class="tool">YouTube</span></div>
         </div>
         <button class="toggle-btn">Read More ↓</button>
       </div>
@@ -348,7 +437,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
         <div class="case-title">End-to-End Luxury Real Estate Marketing Materials</div>
         <div class="case-body">Designed and produced all marketing collateral for luxury residential developments — brochures, presentations, sales decks and digital assets — from brief to final delivery.</div>
         <div class="case-expand">
-          <p>Using Figma, Canva and Claude as the primary production tool, I translated property briefs into polished marketing materials that matched the premium positioning of each development. This included bi-fold and tri-fold brochures, listing presentations, social media creatives and email assets.</p>
+          <p>Using Figma as the primary production tool, I translated property briefs into polished marketing materials that matched the premium positioning of each development. This included bi-fold and tri-fold brochures, listing presentations, social media creatives and email assets.</p>
           <p>Managed the design feedback loop between the marketing team, agents and leadership — ensuring every asset went through a structured review process before deployment.</p>
           <div class="case-result-pill">📐 Full collateral suite produced for multiple developments</div>
           <div class="tools-row"><span class="tool">Figma</span><span class="tool">Canva</span><span class="tool">Brand Guidelines</span><span class="tool">Sales Strategy</span></div>
@@ -766,24 +855,19 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       </div>
       <div class="blog-arrow">→</div>
     </a>
-    <a class="blog-card" href="https://noveldreamhomes.com/blog/best-neighborhoods-in-houston-5-things-to-look-for-before-you-buy/">
+    <a class="blog-card" href="https://wanderwitty.wordpress.com/" target="_blank">
       <div>
-        <div class="blog-meta"><span class="blog-cat">Real Estate</span><div class="blog-dot"></div><span class="blog-date">Novel Signature Homes</span></div>
-        <div class="blog-title">Best Neighborhoods in Houston: 5 Things to Look for Before You Buy</div>
-        <div class="blog-excerpt">A deep dive into 5 important things to look for while choosing a neighboruhood for your new home in Houston. </div>
-        <div class="blog-read-more">Read Article →</div>
+        <div class="blog-meta"><span class="blog-cat">More Writing</span><div class="blog-dot"></div><span class="blog-date">wanderwitty.wordpress.com</span></div>
+        <div class="blog-title">View All Posts on WanderWitty</div>
+        <div class="blog-excerpt">More articles on marketing, travel, brand strategy and everything in between — on my personal blog.</div>
+        <div class="blog-read-more">Visit Blog →</div>
       </div>
       <div class="blog-arrow">→</div>
-</a>
-    <a class="blog-card" href="https://noveldreamhomes.com/blog/buying-a-home-in-texas-guide/">
-      <div>
-        <div class="blog-meta"><span class="blog-cat">Real Estate</span><div class="blog-dot"></div><span class="blog-date">Novel Signature Homes</span></div>
-        <div class="blog-title">Buying a Home in Texas? 6 Things to Keep in Mind</div>
-        <div class="blog-excerpt">A guide on the most important things to check while buying a home in Texas. </div>
-        <div class="blog-read-more">Read Article →</div>
-      </div>
-      <div class="blog-arrow">→</div>
-      
+    </a>
+  </div>
+  <footer><p>© 2026 Ajinkya Bagade</p><div class="footer-dot"></div><p>Digital Marketing Executive</p></footer>
+</div>
+
 <script>
 const cursor = document.getElementById('cursor');
 const glow = document.getElementById('cursorGlow');
