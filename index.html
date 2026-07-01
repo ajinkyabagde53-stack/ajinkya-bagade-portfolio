@@ -219,6 +219,13 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
 .c02-sub{font-size:10px;color:rgba(138,173,160,0.6);display:flex;justify-content:space-between;}
 .c02-sub span{color:rgba(200,239,227,0.5);}
 .c02-organic{margin-top:10px;padding-top:8px;border-top:1px solid rgba(29,158,117,0.1);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(29,158,117,0.5);}
+/* NOVEL OFFICE — GOAL BLOCKS */
+.no-goal-block{padding:32px 0;border-top:1px solid rgba(29,158,117,0.1);}
+.no-goal-block:first-of-type{border-top:none;padding-top:8px;}
+.no-goal-label{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--teal-light);font-weight:600;margin-bottom:6px;}
+.no-goal-desc{font-size:13px;color:var(--gray);line-height:1.7;margin-bottom:20px;max-width:520px;}
+.no-goal-carousel{display:flex;align-items:center;gap:16px;max-width:560px;}
+.no-goal-carousel .carousel-arrow{width:40px;height:40px;font-size:22px;flex-shrink:0;}
 @media(max-width:768px){.phase-strip{grid-template-columns:1fr;}.c02-metrics{grid-template-columns:1fr;}}
 @media(max-width:768px){
   nav{padding:0 24px;}
@@ -652,13 +659,126 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
     <button class="filter-btn" onclick="filterCreatives(this,'brand')">Brand</button>
   </div>
   <div class="creatives-grid" id="creativesGrid">
-    <div class="creative-card" data-cat="social"><div class="creative-thumb"><div class="placeholder-icon">🖼️</div><div class="placeholder-label">Upload Screenshot</div><div class="creative-overlay"><div class="overlay-text">View</div></div></div><div class="creative-info"><div class="creative-cat">Social Media</div><div class="creative-title">Instagram Post — Novel Office</div><div class="creative-desc">Add a short description when you upload your screenshot.</div></div></div>
-    <div class="creative-card" data-cat="meta"><div class="creative-thumb"><div class="placeholder-icon">🖼️</div><div class="placeholder-label">Upload Screenshot</div><div class="creative-overlay"><div class="overlay-text">View</div></div></div><div class="creative-info"><div class="creative-cat">Meta Ads</div><div class="creative-title">Meta Ad Creative — Campaign</div><div class="creative-desc">Add a short description when you upload your screenshot.</div></div></div>
+    <div class="creative-card" data-cat="social"><div class="creative-thumb"><div class="placeholder-icon">🖼️</div><div class="placeholder-label">Upload Screenshot</div><div class="creative-overlay"><div class="overlay-text">View</div></div></div><div class="creative-info"><div class="creative-cat">Social Media</div><div class="creative-title">Instagram Post — Novel Signature Homes</div><div class="creative-desc">Add a short description when you upload your screenshot.</div></div></div>
     <div class="creative-card" data-cat="brand"><div class="creative-thumb"><div class="placeholder-icon">🖼️</div><div class="placeholder-label">Upload Screenshot</div><div class="creative-overlay"><div class="overlay-text">View</div></div></div><div class="creative-info"><div class="creative-cat">Brand</div><div class="creative-title">Brand Guidelines — Novel Office</div><div class="creative-desc">Add a short description when you upload your screenshot.</div></div></div>
-    <div class="creative-card" data-cat="social"><div class="creative-thumb"><div class="placeholder-icon">🖼️</div><div class="placeholder-label">Upload Screenshot</div><div class="creative-overlay"><div class="overlay-text">View</div></div></div><div class="creative-info"><div class="creative-cat">Social Media</div><div class="creative-title">LinkedIn Creative — Campaign</div><div class="creative-desc">Add a short description when you upload your screenshot.</div></div></div>
-    <div class="creative-card" data-cat="meta"><div class="creative-thumb"><div class="placeholder-icon">🖼️</div><div class="placeholder-label">Upload Screenshot</div><div class="creative-overlay"><div class="overlay-text">View</div></div></div><div class="creative-info"><div class="creative-cat">Meta Ads</div><div class="creative-title">Meta Ad Creative — Retargeting</div><div class="creative-desc">Add a short description when you upload your screenshot.</div></div></div>
-    <div class="creative-card" data-cat="brand"><div class="creative-thumb"><div class="placeholder-icon">🖼️</div><div class="placeholder-label">Upload Screenshot</div><div class="creative-overlay"><div class="overlay-text">View</div></div></div><div class="creative-info"><div class="creative-cat">Brand</div><div class="creative-title">Social Template — Novel Office</div><div class="creative-desc">Add a short description when you upload your screenshot.</div></div></div>
   </div>
+
+  <!-- NOVEL OFFICE META ADS -->
+  <div class="brochures-section">
+    <div class="brochures-label">Novel Office · Meta Ads</div>
+    <div class="brochures-head">Performance Ad Creatives</div>
+    <p style="font-size:13px;color:var(--gray);line-height:1.8;margin:8px 0 36px;max-width:600px;">Oversaw the paid social strategy for Novel Office across Meta. Campaigns structured across three funnel objectives — building awareness with cold audiences, re-engaging warm traffic, and converting intent with direct offers.</p>
+
+    <!-- BRAND AWARENESS -->
+    <div class="no-goal-block">
+      <div class="no-goal-label">Brand Awareness</div>
+      <div class="no-goal-desc">Top-of-funnel creatives served to cold audiences. Goal: introduce Novel Office as a premium managed workspace and drive initial brand recall.</div>
+      <div class="no-goal-carousel">
+        <button class="carousel-arrow" id="noAwPrev" onclick="moveCarousel('noAw',-1)">&#8249;</button>
+        <div style="flex:1;overflow:hidden;border-radius:4px;">
+          <div id="noAwTrack" style="display:flex;transition:transform 0.45s cubic-bezier(0.4,0,0.2,1);">
+            <div style="min-width:100%;"><img src="creatives/no-awareness-1.jpg" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;display:block;border:1px solid rgba(29,158,117,0.12);" onerror="this.style.opacity='0.15'"></div>
+            <div style="min-width:100%;"><img src="creatives/no-awareness-2.jpg" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;display:block;border:1px solid rgba(29,158,117,0.12);" onerror="this.style.opacity='0.15'"></div>
+            <div style="min-width:100%;"><img src="creatives/no-awareness-3.jpg" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;display:block;border:1px solid rgba(29,158,117,0.12);" onerror="this.style.opacity='0.15'"></div>
+          </div>
+        </div>
+        <button class="carousel-arrow" id="noAwNext" onclick="moveCarousel('noAw',1)">&#8250;</button>
+      </div>
+      <div class="carousel-dots" id="noAwDots" style="margin-top:14px;justify-content:flex-start;"></div>
+    </div>
+
+    <!-- RETARGETING -->
+    <div class="no-goal-block">
+      <div class="no-goal-label">Retargeting</div>
+      <div class="no-goal-desc">Mid-funnel creatives served to warm audiences — people who'd visited the site, watched a video, or interacted with previous ads. Goal: bring them back and reinforce the proposition.</div>
+      <div class="no-goal-carousel">
+        <button class="carousel-arrow" id="noRtPrev" onclick="moveCarousel('noRt',-1)">&#8249;</button>
+        <div style="flex:1;overflow:hidden;border-radius:4px;">
+          <div id="noRtTrack" style="display:flex;transition:transform 0.45s cubic-bezier(0.4,0,0.2,1);">
+            <div style="min-width:100%;"><img src="creatives/no-retargeting-1.jpg" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;display:block;border:1px solid rgba(29,158,117,0.12);" onerror="this.style.opacity='0.15'"></div>
+            <div style="min-width:100%;"><img src="creatives/no-retargeting-2.jpg" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;display:block;border:1px solid rgba(29,158,117,0.12);" onerror="this.style.opacity='0.15'"></div>
+          </div>
+        </div>
+        <button class="carousel-arrow" id="noRtNext" onclick="moveCarousel('noRt',1)">&#8250;</button>
+      </div>
+      <div class="carousel-dots" id="noRtDots" style="margin-top:14px;justify-content:flex-start;"></div>
+    </div>
+
+    <!-- LEAD GENERATION -->
+    <div class="no-goal-block">
+      <div class="no-goal-label">Lead Generation</div>
+      <div class="no-goal-desc">Bottom-of-funnel creative with a direct incentive. Goal: convert high-intent prospects into enquiries and trial bookings with a time-sensitive offer.</div>
+      <div style="max-width:560px;margin-top:4px;">
+        <img src="creatives/no-leadgen.jpg" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;display:block;border:1px solid rgba(29,158,117,0.12);" onerror="this.style.opacity='0.15'">
+      </div>
+    </div>
+  </div>
+
+  <!-- NSH RENDER CAROUSEL -->
+  <div class="brochures-section">
+    <div class="brochures-label">Novel Signature Homes — Social Media</div>
+    <div class="brochures-head">Render Series · Instagram Posts</div>
+    <div style="display:flex;align-items:center;gap:20px;margin-top:8px;">
+      <button class="carousel-arrow" id="nshPrev" onclick="moveNsh(-1)">&#8249;</button>
+      <div style="flex:1;overflow:hidden;border-radius:4px;">
+        <div id="nshTrack" style="display:flex;transition:transform 0.45s cubic-bezier(0.4,0,0.2,1);">
+          <div style="min-width:100%;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;">
+            <div style="aspect-ratio:1/1;background:var(--dark3);border-radius:4px;overflow:hidden;border:1px solid rgba(29,158,117,0.12);">
+              <img src="creatives/nsh-render-1.jpg" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
+            </div>
+            <div style="padding:16px 0;">
+              <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;">01 / 05 · Game Room</div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--teal-pale);margin-bottom:12px;line-height:1.2;">Recreation & Leisure Space</div>
+              <div style="font-size:13px;color:var(--gray);line-height:1.8;">Render repurposed from MLS to social — styled to evoke lifestyle aspiration rather than just showcase square footage. Part of the elevated render series created for NSH's Instagram presence.</div>
+            </div>
+          </div>
+          <div style="min-width:100%;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;">
+            <div style="aspect-ratio:1/1;background:var(--dark3);border-radius:4px;overflow:hidden;border:1px solid rgba(29,158,117,0.12);">
+              <img src="creatives/nsh-render-2.jpg" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
+            </div>
+            <div style="padding:16px 0;">
+              <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;">02 / 05 · Master Bathroom</div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--teal-pale);margin-bottom:12px;line-height:1.2;">Luxury Bath & Vanity Suite</div>
+              <div style="font-size:13px;color:var(--gray);line-height:1.8;">Gold fixtures, marble countertops and ambient sconce lighting — the render brief pushed for materials and lighting that photograph as premium on mobile screens.</div>
+            </div>
+          </div>
+          <div style="min-width:100%;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;">
+            <div style="aspect-ratio:1/1;background:var(--dark3);border-radius:4px;overflow:hidden;border:1px solid rgba(29,158,117,0.12);">
+              <img src="creatives/nsh-render-3.jpg" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
+            </div>
+            <div style="padding:16px 0;">
+              <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;">03 / 05 · Outdoor</div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--teal-pale);margin-bottom:12px;line-height:1.2;">Covered Patio & Al Fresco Dining</div>
+              <div style="font-size:13px;color:var(--gray);line-height:1.8;">Outdoor living is a key selling point in Houston. Directed the brief to show the space as lifestyle-ready — entertaining, greenery, natural light.</div>
+            </div>
+          </div>
+          <div style="min-width:100%;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;">
+            <div style="aspect-ratio:1/1;background:var(--dark3);border-radius:4px;overflow:hidden;border:1px solid rgba(29,158,117,0.12);">
+              <img src="creatives/nsh-render-4.jpg" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
+            </div>
+            <div style="padding:16px 0;">
+              <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;">04 / 05 · Kitchen</div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--teal-pale);margin-bottom:12px;line-height:1.2;">Chef's Kitchen with Marble Feature Wall</div>
+              <div style="font-size:13px;color:var(--gray);line-height:1.8;">The most-viewed post in the series. Walnut cabinetry, statement marble backsplash and island seating — briefed specifically to drive saves and shares on Instagram.</div>
+            </div>
+          </div>
+          <div style="min-width:100%;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;">
+            <div style="aspect-ratio:1/1;background:var(--dark3);border-radius:4px;overflow:hidden;border:1px solid rgba(29,158,117,0.12);">
+              <img src="creatives/nsh-render-5.jpg" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
+            </div>
+            <div style="padding:16px 0;">
+              <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;">05 / 05 · Primary Bedroom</div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--teal-pale);margin-bottom:12px;line-height:1.2;">Primary Suite — Calm & Considered</div>
+              <div style="font-size:13px;color:var(--gray);line-height:1.8;">Muted tones, layered textures and natural light — the brief was to evoke restraint and calm, letting the space speak rather than oversell it.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-arrow" id="nshNext" onclick="moveNsh(1)">&#8250;</button>
+    </div>
+    <div class="carousel-dots" id="nshDots" style="margin-top:20px;"></div>
+  </div>
+
   <!-- BROCHURES -->
   <div class="brochures-section">
     <div class="brochures-label">Sales Collateral & Brochures</div>
@@ -909,6 +1029,66 @@ function toggleCase(card) {
   if (!isOpen) { expand.classList.add('open'); if (btn) btn.textContent = 'Close ↑'; }
 }
 
+// Generic carousel system
+const carousels = {};
+function initCarousel(id, total) {
+  carousels[id] = { index: 0, total };
+  const dotsEl = document.getElementById(id + 'Dots');
+  if (dotsEl) {
+    for (let i = 0; i < total; i++) {
+      const d = document.createElement('button');
+      d.className = 'carousel-dot' + (i===0 ? ' active' : '');
+      d.onclick = () => goCarousel(id, i);
+      dotsEl.appendChild(d);
+    }
+  }
+  goCarousel(id, 0);
+}
+function goCarousel(id, n) {
+  const s = carousels[id];
+  s.index = n;
+  const track = document.getElementById(id + 'Track');
+  if (track) track.style.transform = `translateX(-${n * 100}%)`;
+  document.querySelectorAll('#' + id + 'Dots .carousel-dot').forEach((d, i) => d.classList.toggle('active', i === n));
+  const prev = document.getElementById(id + 'Prev');
+  const next = document.getElementById(id + 'Next');
+  if (prev) prev.disabled = n === 0;
+  if (next) next.disabled = n === s.total - 1;
+}
+function moveCarousel(id, dir) {
+  const s = carousels[id];
+  goCarousel(id, Math.max(0, Math.min(s.total - 1, s.index + dir)));
+}
+initCarousel('noAw', 3);
+initCarousel('noRt', 2);
+
+// NSH Render Carousel
+let nshIndex = 0;
+const nshTotal = 5;
+(function initNsh() {
+  const dotsEl = document.getElementById('nshDots');
+  if (!dotsEl) return;
+  for (let i = 0; i < nshTotal; i++) {
+    const d = document.createElement('button');
+    d.className = 'carousel-dot' + (i===0?' active':'');
+    d.onclick = () => goNsh(i);
+    dotsEl.appendChild(d);
+  }
+  goNsh(0);
+})();
+function goNsh(n) {
+  nshIndex = n;
+  const track = document.getElementById('nshTrack');
+  if (track) track.style.transform = `translateX(-${nshIndex * 100}%)`;
+  document.querySelectorAll('#nshDots .carousel-dot').forEach((d,i) => d.classList.toggle('active', i===nshIndex));
+  const prev = document.getElementById('nshPrev');
+  const next = document.getElementById('nshNext');
+  if (prev) prev.disabled = nshIndex === 0;
+  if (next) next.disabled = nshIndex === nshTotal - 1;
+}
+function moveNsh(dir) { goNsh(Math.max(0, Math.min(nshTotal-1, nshIndex+dir))); }
+
+// Email Carousel
 let emailIndex = 0;
 const emailSlides = document.querySelectorAll('.email-slide');
 const emailTrack = document.getElementById('emailTrack');
@@ -924,7 +1104,7 @@ if (emailDots) {
 function goEmail(n) {
   emailIndex = n;
   if (emailTrack) emailTrack.style.transform = `translateX(-${emailIndex * 100}%)`;
-  document.querySelectorAll('.carousel-dot').forEach((d,i) => d.classList.toggle('active', i===emailIndex));
+  document.querySelectorAll('#emailDots .carousel-dot').forEach((d,i) => d.classList.toggle('active', i===emailIndex));
   const prev = document.getElementById('emailPrev');
   const next = document.getElementById('emailNext');
   if (prev) prev.disabled = emailIndex === 0;
@@ -932,9 +1112,11 @@ function goEmail(n) {
 }
 function moveEmail(dir) { goEmail(Math.max(0, Math.min(emailSlides.length-1, emailIndex+dir))); }
 goEmail(0);
-</script>
-</body>
-</html>document.querySelectorAll('.creative-card').forEach(card => {
+
+function filterCreatives(btn, cat) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.creative-card').forEach(card => {
     card.style.display = (cat==='all' || card.dataset.cat===cat) ? 'block' : 'none';
   });
 }
