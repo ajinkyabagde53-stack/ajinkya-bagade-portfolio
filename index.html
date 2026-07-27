@@ -288,7 +288,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
 @media(max-width:768px){.phase-strip{grid-template-columns:1fr;}.c02-metrics{grid-template-columns:1fr;}}
 /* --- upgrades --- */
 .hero .dot-grid{inset:-40px;transition:transform .25s ease-out;}
-.perf-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:720px;margin-top:8px;}
+.perf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px;}
 .perf-grid img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;display:block;border:1px solid rgba(29,158,117,0.12);}
 .nsh-chart{display:grid;grid-template-columns:1.6fr 1fr;gap:28px;align-items:center;background:rgba(13,107,84,0.08);border:1px solid rgba(29,158,117,0.14);border-radius:8px;padding:26px 28px;margin-bottom:20px;}
 .nsh-bar{margin-bottom:18px;}
@@ -416,7 +416,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
         <div class="creds-education">
           <div class="cred-sub-label">Education</div>
           <div class="edu-card">
-            <div class="edu-logo"><img src="certifications/university-of-york.png.png" alt="University of York"></div>
+            <div class="edu-logo"><img src="certifications/university-of-york.png.png" alt="University of York" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='certifications/university-of-york.png';}"></div>
             <div class="edu-text">
               <div class="edu-degree">MSc Global Marketing</div>
               <div class="edu-school">University of York</div>
@@ -427,15 +427,15 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
           <div class="cred-sub-label">Certifications</div>
           <div class="badges-row">
             <div class="badge">
-              <div class="badge-img"><img src="certifications/google-ads-search.png.png" alt="Google Ads Search Certified"></div>
+              <div class="badge-img"><img src="certifications/google-ads-search.png.png" alt="Google Ads Search Certified" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='certifications/google-ads-search.png';}"></div>
               <div class="badge-name">Google Ads<br>Search</div>
             </div>
             <div class="badge">
-              <div class="badge-img"><img src="certifications/google-ads-display.png.png" alt="Google Ads Display Certified"></div>
+              <div class="badge-img"><img src="certifications/google-ads-display.png.png" alt="Google Ads Display Certified" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='certifications/google-ads-display.png';}"></div>
               <div class="badge-name">Google Ads<br>Display</div>
             </div>
             <div class="badge">
-              <div class="badge-img"><img src="certifications/google-ads-video.png.png" alt="Google Ads Video Certified"></div>
+              <div class="badge-img"><img src="certifications/google-ads-video.png.png" alt="Google Ads Video Certified" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='certifications/google-ads-video.png';}"></div>
               <div class="badge-name">Google Ads<br>Video</div>
             </div>
           </div>
@@ -1005,8 +1005,8 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
             </div>
             <div class="email-slide-meta">
               <div class="email-slide-tag">Property Campaign</div>
-              <div class="email-slide-title">1001 E · Listing Campaign</div>
-              <div class="email-slide-desc">Campaign email for the 1001 E listing. Built to highlight key property features and drive prospective buyer action through focused copy and layout.</div>
+              <div class="email-slide-title">1001 E · Sold</div>
+              <div class="email-slide-desc">Listing campaign email for 1001 E. The property drew strong buyer interest and has since sold.</div>
               <a href="emails/1001-e.html" target="_blank" class="email-view-btn">View Full Email ↗</a>
             </div>
           </div>
