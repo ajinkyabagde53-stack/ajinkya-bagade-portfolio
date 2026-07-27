@@ -178,6 +178,52 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;justify-content
 .blog-arrow{font-size:28px;color:rgba(29,158,117,0.2);transition:transform 0.3s,color 0.3s;text-align:center;}
 .blog-card:hover .blog-arrow{transform:translateX(6px);color:var(--teal-light);}
 .blog-read-more{display:inline-flex;align-items:center;gap:8px;margin-top:16px;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal-light);}
+/* CREDENTIALS */
+.creds-section{padding:96px 56px;background:var(--dark);border-top:1px solid rgba(29,158,117,0.1);}
+.creds-inner{max-width:1100px;margin:0 auto;}
+.creds-label{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:16px;}
+.creds-head{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,3.5vw,48px);font-weight:300;color:var(--teal-pale);margin-bottom:52px;}
+.creds-grid{display:grid;grid-template-columns:0.95fr 1.35fr;gap:56px;align-items:start;}
+.cred-sub-label{font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--gray);margin-bottom:22px;}
+.edu-card{background:var(--dark2);border:1px solid rgba(29,158,117,0.12);border-radius:6px;padding:30px;display:flex;align-items:center;gap:24px;transition:border-color 0.35s,transform 0.35s;}
+.edu-card:hover{border-color:rgba(29,158,117,0.32);transform:translateY(-3px);}
+.edu-logo{background:#fff;border-radius:6px;padding:12px;width:92px;height:92px;flex-shrink:0;display:flex;align-items:center;justify-content:center;}
+.edu-logo img{width:100%;height:100%;object-fit:contain;display:block;}
+.edu-degree{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:400;color:var(--teal-pale);line-height:1.1;margin-bottom:8px;}
+.edu-school{font-size:12px;color:var(--gray);letter-spacing:1px;text-transform:uppercase;font-weight:500;}
+.badges-row{display:flex;gap:28px;flex-wrap:wrap;}
+.badge{display:flex;flex-direction:column;align-items:center;gap:14px;width:118px;}
+.badge-img{width:104px;height:104px;border-radius:50%;overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 22px rgba(0,0,0,0.28);transition:transform 0.35s;}
+.badge:hover .badge-img{transform:translateY(-5px) scale(1.03);}
+.badge-img img{width:100%;height:100%;object-fit:contain;display:block;}
+.badge-name{font-size:11px;color:var(--gray-light);text-align:center;letter-spacing:0.5px;line-height:1.4;font-weight:400;}
+/* PAID ADS */
+.ads-wrap{max-width:1100px;margin:0 auto;padding:8px 56px 40px;}
+.ads-highlights{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid rgba(29,158,117,0.12);border-radius:6px;overflow:hidden;margin-bottom:56px;}
+.ads-hl{background:var(--dark2);padding:32px 28px;border-right:1px solid rgba(29,158,117,0.1);}
+.ads-hl:last-child{border-right:none;}
+.ads-hl-n{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,4.5vw,54px);font-weight:300;color:var(--teal-light);line-height:1;letter-spacing:-1px;}
+.ads-hl-l{font-size:12px;color:var(--gray);margin-top:10px;font-weight:300;}
+.ads-note{font-size:13px;color:var(--gray);line-height:1.85;font-weight:300;max-width:660px;margin-bottom:48px;}
+.ads-platform{margin-bottom:56px;}
+.ads-platform-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;border-bottom:1px solid rgba(29,158,117,0.12);padding-bottom:18px;margin-bottom:24px;}
+.ads-platform-name{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:400;color:var(--teal-pale);}
+.ads-platform-meta{font-size:11px;color:var(--gray);letter-spacing:1.5px;text-transform:uppercase;}
+.ads-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+.ads-metric{background:rgba(13,107,84,0.08);border:1px solid rgba(29,158,117,0.14);border-radius:5px;padding:22px 20px;position:relative;overflow:hidden;}
+.ads-metric::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--teal-light),transparent);}
+.ads-metric-l{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;}
+.ads-metric-n{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:var(--teal-pale);line-height:1;}
+.ads-metric-s{font-size:10px;color:var(--gray);margin-top:8px;line-height:1.4;}
+.ads-dashboard{margin-top:28px;border:1px solid rgba(29,158,117,0.15);border-radius:6px;overflow:hidden;}
+.ads-dashboard img{width:100%;display:block;background:#f4f4f4;}
+.ads-dash-cap{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gray);padding:12px 16px;background:var(--dark2);border-top:1px solid rgba(29,158,117,0.1);}
+@media(max-width:768px){
+  .ads-wrap{padding-left:24px;padding-right:24px;}
+  .ads-highlights{grid-template-columns:repeat(2,1fr);}
+  .ads-hl{border-right:none;border-bottom:1px solid rgba(29,158,117,0.1);}
+  .ads-metrics{grid-template-columns:repeat(2,1fr);}
+}
 /* CONTACT */
 .contact-section{padding:96px 56px;background:var(--dark2);}
 .contact-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
@@ -231,13 +277,15 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
   nav{padding:0 24px;}
   .nav-links{gap:0;}
   .nav-btn{padding:8px 10px;font-size:9px;}
-  .hero,.about-strip,.page-hero,.cases-list,.creatives-grid,.brochures-section,.email-grid,.blogs-list,.contact-section,.filter-bar{padding-left:24px;padding-right:24px;}
+  .hero,.about-strip,.page-hero,.cases-list,.creatives-grid,.brochures-section,.email-grid,.blogs-list,.contact-section,.filter-bar,.creds-section{padding-left:24px;padding-right:24px;}
   .hero-stats{grid-template-columns:repeat(2,1fr);gap:32px;}
   .stat{border-right:none;padding:0;}
   .skills-grid,.creatives-grid,.brochures-grid{grid-template-columns:1fr;}
   .email-grid{grid-template-columns:1fr;}
   .about-strip{grid-template-columns:1fr;gap:40px;}
   .contact-inner{grid-template-columns:1fr;gap:48px;}
+  .creds-grid{grid-template-columns:1fr;gap:44px;}
+  .badges-row{gap:20px;justify-content:flex-start;}
   .case-card{grid-template-columns:1fr;}
   .case-num{display:none;}
   .blog-card{grid-template-columns:1fr;}
@@ -255,12 +303,12 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
   <div class="nav-links">
     <button class="nav-btn active" onclick="showPage('home')">Home</button>
     <button class="nav-btn" onclick="showPage('cases')">Case Studies</button>
+    <button class="nav-btn" onclick="showPage('ads')">Paid Ads</button>
     <button class="nav-btn" onclick="showPage('creatives')">Creatives</button>
     <button class="nav-btn" onclick="showPage('emails')">Email Templates</button>
     <button class="nav-btn" onclick="showPage('blogs')">Blogs</button>
   </div>
 </nav>
-
 <!-- ═══ HOME ═══ -->
 <div class="page active" id="page-home">
   <section class="hero">
@@ -270,7 +318,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       <div class="hero-name">Ajinkya<br><span>Bagade</span></div>
       <div class="hero-title-row">
         <div class="hero-title-dot"></div>
-        <div class="hero-title">Digital Marketing Executive</div>
+        <div class="hero-title">Team Lead - Marketing</div>
         <div class="hero-title-dot"></div>
         <div class="hero-title">Novel Office</div>
       </div>
@@ -280,10 +328,10 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
         <button class="btn btn-o" onclick="document.getElementById('contact-home').scrollIntoView({behavior:'smooth'})">Let's Talk</button>
       </div>
       <div class="hero-stats">
-        <div class="stat"><div class="stat-n">₹1.2Cr+</div><div class="stat-l">Ad Spend Managed</div></div>
-        <div class="stat"><div class="stat-n">120M+</div><div class="stat-l">Paid Impressions</div></div>
-        <div class="stat"><div class="stat-n">6.2K+</div><div class="stat-l">Leads & Conversions</div></div>
-        <div class="stat"><div class="stat-n">53K+</div><div class="stat-l">Organic Social Views</div></div>
+        <div class="stat"><div class="stat-n">₹89L+</div><div class="stat-l">Ad Spend Managed</div></div>
+        <div class="stat"><div class="stat-n">12.6M+</div><div class="stat-l">Paid Impressions</div></div>
+        <div class="stat"><div class="stat-n">6.5K+</div><div class="stat-l">Leads & Conversions</div></div>
+        <div class="stat"><div class="stat-n">2.7M+</div><div class="stat-l">Audience Reached</div></div>
       </div>
     </div>
   </section>
@@ -317,6 +365,41 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       </div>
     </div>
   </section>
+  <section class="creds-section reveal">
+    <div class="creds-inner">
+      <div class="creds-label">Credentials</div>
+      <div class="creds-head">Education &amp; Certifications</div>
+      <div class="creds-grid">
+        <div class="creds-education">
+          <div class="cred-sub-label">Education</div>
+          <div class="edu-card">
+            <div class="edu-logo"><img src="certifications/university-of-york.png" alt="University of York"></div>
+            <div class="edu-text">
+              <div class="edu-degree">MSc Global Marketing</div>
+              <div class="edu-school">University of York</div>
+            </div>
+          </div>
+        </div>
+        <div class="creds-certs">
+          <div class="cred-sub-label">Certifications</div>
+          <div class="badges-row">
+            <div class="badge">
+              <div class="badge-img"><img src="certifications/google-ads-search.png" alt="Google Ads Search Certified"></div>
+              <div class="badge-name">Google Ads<br>Search</div>
+            </div>
+            <div class="badge">
+              <div class="badge-img"><img src="certifications/google-ads-display.png" alt="Google Ads Display Certified"></div>
+              <div class="badge-name">Google Ads<br>Display</div>
+            </div>
+            <div class="badge">
+              <div class="badge-img"><img src="certifications/google-ads-video.png" alt="Google Ads Video Certified"></div>
+              <div class="badge-name">Google Ads<br>Video</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <div id="contact-home">
     <div class="contact-section">
       <div class="contact-inner">
@@ -331,9 +414,8 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       </div>
     </div>
   </div>
-  <footer><p>© 2026 Ajinkya Bagade</p><div class="footer-dot"></div><p>Digital Marketing Executive</p></footer>
+  <footer><p>© 2026 Ajinkya Bagade</p><div class="footer-dot"></div><p>Team Lead - Marketing</p></footer>
 </div>
-
 <!-- ═══ CASE STUDIES ═══ -->
 <div class="page" id="page-cases">
   <div class="page-hero">
@@ -545,7 +627,6 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
               </marker>
             </defs>
             <rect width="640" height="774" fill="#0d1f19" rx="4"/>
-
             <!-- 01 SCHEDULED TRIGGER -->
             <rect x="120" y="20" width="400" height="52" rx="3" fill="rgba(29,158,117,0.12)" stroke="rgba(29,158,117,0.35)" stroke-width="1"/>
             <text x="140" y="39" font-family="Outfit,sans-serif" font-size="9" fill="#1d9e75" letter-spacing="2">01  SCHEDULED TRIGGER</text>
@@ -553,13 +634,11 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
             <rect x="456" y="27" width="50" height="16" rx="2" fill="rgba(29,158,117,0.12)" stroke="rgba(29,158,117,0.25)" stroke-width="0.5"/>
             <text x="481" y="39" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="#1d9e75" letter-spacing="1">AUTO</text>
             <line x1="320" y1="72" x2="320" y2="90" stroke="#1d9e75" stroke-width="1.5" marker-end="url(#arr-rpt)"/>
-
             <!-- 02 AUTHENTICATE -->
             <rect x="120" y="94" width="400" height="52" rx="3" fill="rgba(13,107,84,0.18)" stroke="rgba(29,158,117,0.25)" stroke-width="1"/>
             <text x="140" y="113" font-family="Outfit,sans-serif" font-size="9" fill="#1d9e75" letter-spacing="2">02  AUTHENTICATE</text>
             <text x="140" y="133" font-family="Outfit,sans-serif" font-size="13" fill="#e0ede8">GA4 Service Account · ERP Bearer Token</text>
             <line x1="320" y1="146" x2="320" y2="162" stroke="#1d9e75" stroke-width="1.5" marker-end="url(#arr-rpt)"/>
-
             <!-- DECISION: Auth valid? -->
             <polygon points="320,162 406,188 320,214 234,188" fill="rgba(13,50,40,0.4)" stroke="rgba(29,158,117,0.35)" stroke-width="1"/>
             <text x="320" y="184" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#1d9e75" letter-spacing="1">AUTH</text>
@@ -568,32 +647,27 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
             <text x="414" y="182" font-family="Outfit,sans-serif" font-size="9" fill="#d45a5a">✗ Abort + Notify</text>
             <line x1="320" y1="214" x2="320" y2="230" stroke="#1d9e75" stroke-width="1.5" marker-end="url(#arr-rpt)"/>
             <text x="328" y="227" font-family="Outfit,sans-serif" font-size="9" fill="#1d9e75">✓</text>
-
             <!-- 03 PULL DATA -->
             <rect x="120" y="234" width="400" height="68" rx="3" fill="rgba(13,107,84,0.18)" stroke="rgba(29,158,117,0.25)" stroke-width="1"/>
             <text x="140" y="253" font-family="Outfit,sans-serif" font-size="9" fill="#1d9e75" letter-spacing="2">03  PULL DATA — 6 API CALLS</text>
             <text x="140" y="273" font-family="Outfit,sans-serif" font-size="13" fill="#e0ede8">GA4 &amp; ERP Queried in Parallel</text>
             <text x="140" y="291" font-family="Outfit,sans-serif" font-size="10" fill="#8aada0">GA4: Traffic · Pages · Social · Key Events  ·  ERP: Leads by Channel</text>
             <line x1="320" y1="302" x2="320" y2="320" stroke="#1d9e75" stroke-width="1.5" marker-end="url(#arr-rpt)"/>
-
             <!-- 04 TRANSFORM -->
             <rect x="120" y="324" width="400" height="52" rx="3" fill="rgba(13,107,84,0.18)" stroke="rgba(29,158,117,0.25)" stroke-width="1"/>
             <text x="140" y="343" font-family="Outfit,sans-serif" font-size="9" fill="#1d9e75" letter-spacing="2">04  TRANSFORM &amp; MAP</text>
             <text x="140" y="363" font-family="Outfit,sans-serif" font-size="13" fill="#e0ede8">Clean, Format &amp; Assign to Excel Cells</text>
             <line x1="320" y1="376" x2="320" y2="394" stroke="#1d9e75" stroke-width="1.5" marker-end="url(#arr-rpt)"/>
-
             <!-- 05 WRITE TO EXCEL -->
             <rect x="120" y="398" width="400" height="52" rx="3" fill="rgba(13,107,84,0.18)" stroke="rgba(29,158,117,0.25)" stroke-width="1"/>
             <text x="140" y="417" font-family="Outfit,sans-serif" font-size="9" fill="#1d9e75" letter-spacing="2">05  WRITE TO EXCEL</text>
             <text x="140" y="437" font-family="Outfit,sans-serif" font-size="13" fill="#e0ede8">2026 Data · Leads &amp; Conversion Sheets</text>
             <line x1="320" y1="450" x2="320" y2="468" stroke="#1d9e75" stroke-width="1.5" marker-end="url(#arr-rpt)"/>
-
             <!-- 06 VALIDATE -->
             <rect x="120" y="472" width="400" height="52" rx="3" fill="rgba(13,107,84,0.18)" stroke="rgba(29,158,117,0.25)" stroke-width="1"/>
             <text x="140" y="491" font-family="Outfit,sans-serif" font-size="9" fill="#1d9e75" letter-spacing="2">06  VALIDATE</text>
             <text x="140" y="511" font-family="Outfit,sans-serif" font-size="13" fill="#e0ede8">Re-read Cells · Run Sanity Checks</text>
             <line x1="320" y1="524" x2="320" y2="540" stroke="#1d9e75" stroke-width="1.5" marker-end="url(#arr-rpt)"/>
-
             <!-- DECISION: Validation clean? -->
             <polygon points="320,540 406,566 320,592 234,566" fill="rgba(13,50,40,0.4)" stroke="rgba(29,158,117,0.35)" stroke-width="1"/>
             <text x="320" y="562" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#1d9e75" letter-spacing="1">DATA</text>
@@ -602,13 +676,11 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
             <text x="414" y="560" font-family="Outfit,sans-serif" font-size="9" fill="#d4b84a">⚠ Flag + Notify</text>
             <line x1="320" y1="592" x2="320" y2="608" stroke="#1d9e75" stroke-width="1.5" marker-end="url(#arr-rpt)"/>
             <text x="328" y="605" font-family="Outfit,sans-serif" font-size="9" fill="#1d9e75">✓</text>
-
             <!-- 07 DELIVER REPORT -->
             <rect x="120" y="612" width="400" height="52" rx="3" fill="rgba(13,107,84,0.18)" stroke="rgba(29,158,117,0.25)" stroke-width="1"/>
             <text x="140" y="631" font-family="Outfit,sans-serif" font-size="9" fill="#1d9e75" letter-spacing="2">07  DELIVER REPORT</text>
             <text x="140" y="651" font-family="Outfit,sans-serif" font-size="13" fill="#e0ede8">Workbook Saved · Summary Notification Sent</text>
             <line x1="320" y1="664" x2="320" y2="682" stroke="#d4944a" stroke-width="1.5" marker-end="url(#arr-rpt-amb)"/>
-
             <!-- 08 MANUAL FINISH (amber, dashed) -->
             <rect x="120" y="686" width="400" height="68" rx="3" fill="rgba(40,25,8,0.5)" stroke="#d4944a" stroke-width="1" stroke-dasharray="4 3"/>
             <text x="140" y="705" font-family="Outfit,sans-serif" font-size="9" fill="#d4944a" letter-spacing="2">08  MANUAL FINISH — ~10 MIN</text>
@@ -640,9 +712,67 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       </div>
     </a>
   </div>
-  <footer><p>© 2026 Ajinkya Bagade</p><div class="footer-dot"></div><p>Digital Marketing Executive</p></footer>
+  <footer><p>© 2026 Ajinkya Bagade</p><div class="footer-dot"></div><p>Team Lead - Marketing</p></footer>
 </div>
-
+<!-- ═══ PAID ADS ═══ -->
+<div class="page" id="page-ads">
+  <div class="page-hero">
+    <div class="dot-grid"></div>
+    <div style="max-width:1100px;margin:0 auto;position:relative;">
+      <div class="page-hero-label">Performance Marketing</div>
+      <div class="page-hero-title">Paid Ads</div>
+      <div class="page-hero-sub">Managing paid acquisition across Google and Meta — full-funnel structure, creative testing and reporting, with AI woven through briefing, iteration and optimisation.</div>
+    </div>
+  </div>
+  <div class="ads-wrap">
+    <div class="ads-highlights">
+      <div class="ads-hl"><div class="ads-hl-n">₹89L+</div><div class="ads-hl-l">Ad Spend Managed</div></div>
+      <div class="ads-hl"><div class="ads-hl-n">12.6M</div><div class="ads-hl-l">Total Impressions</div></div>
+      <div class="ads-hl"><div class="ads-hl-n">2.7M+</div><div class="ads-hl-l">Audience Reached</div></div>
+      <div class="ads-hl"><div class="ads-hl-n">6.5K+</div><div class="ads-hl-l">Leads & Conversions</div></div>
+    </div>
+    <p class="ads-note">Combined performance across both platforms, Jun 2025 – Jun 2026. Google carried high-intent search and video demand; Meta drove efficient top-of-funnel reach and lead capture. Each platform is broken out in full below.</p>
+    <!-- GOOGLE -->
+    <div class="ads-platform">
+      <div class="ads-platform-head">
+        <div class="ads-platform-name">Google Ads</div>
+        <div class="ads-platform-meta">Search · Display · Video · Jun 2025 – Jun 2026</div>
+      </div>
+      <div class="ads-metrics">
+        <div class="ads-metric"><div class="ads-metric-l">Impressions</div><div class="ads-metric-n">1.33M</div></div>
+        <div class="ads-metric"><div class="ads-metric-l">Clicks</div><div class="ads-metric-n">90.1K</div></div>
+        <div class="ads-metric"><div class="ads-metric-l">CTR</div><div class="ads-metric-n">6.77%</div><div class="ads-metric-s">Well above search benchmarks</div></div>
+        <div class="ads-metric"><div class="ads-metric-l">Conversions</div><div class="ads-metric-n">5,280</div></div>
+        <div class="ads-metric"><div class="ads-metric-l">Conv. Rate</div><div class="ads-metric-n">5.86%</div></div>
+        <div class="ads-metric"><div class="ads-metric-l">CPA</div><div class="ads-metric-n">₹1,562</div><div class="ads-metric-s">Cost per acquisition</div></div>
+        <div class="ads-metric"><div class="ads-metric-l">Total Spend</div><div class="ads-metric-n">₹82.5L</div></div>
+        <div class="ads-metric"><div class="ads-metric-l">Campaigns</div><div class="ads-metric-n">11</div></div>
+      </div>
+      <div class="ads-dashboard">
+        <img src="ads/google-ads-dashboard.png" alt="Google Ads console overview" onerror="this.closest('.ads-dashboard').style.display='none'">
+        <div class="ads-dash-cap">Google Ads Console · Overview — Jun 2025 to Jun 2026</div>
+      </div>
+    </div>
+    <!-- META -->
+    <div class="ads-platform">
+      <div class="ads-platform-head">
+        <div class="ads-platform-name">Meta Ads</div>
+        <div class="ads-platform-meta">Awareness · Retargeting · Lead Gen · Jun 2025 – Jun 2026</div>
+      </div>
+      <div class="ads-metrics">
+        <div class="ads-metric"><div class="ads-metric-l">Impressions</div><div class="ads-metric-n">11.29M</div></div>
+        <div class="ads-metric"><div class="ads-metric-l">Reach</div><div class="ads-metric-n">2.69M</div></div>
+        <div class="ads-metric"><div class="ads-metric-l">Frequency</div><div class="ads-metric-n">4.2×</div></div>
+        <div class="ads-metric"><div class="ads-metric-l">Leads</div><div class="ads-metric-n">1,237</div></div>
+        <div class="ads-metric"><div class="ads-metric-l">Avg. CPL</div><div class="ads-metric-n">₹526</div></div>
+        <div class="ads-metric"><div class="ads-metric-l">Best CPL</div><div class="ads-metric-n">₹329</div><div class="ads-metric-s">Best-performing campaign</div></div>
+        <div class="ads-metric"><div class="ads-metric-l">CPM</div><div class="ads-metric-n">₹59</div></div>
+        <div class="ads-metric"><div class="ads-metric-l">Total Spend</div><div class="ads-metric-n">₹6.71L</div></div>
+      </div>
+    </div>
+  </div>
+  <footer><p>© 2026 Ajinkya Bagade</p><div class="footer-dot"></div><p>Team Lead - Marketing</p></footer>
+</div>
 <!-- ═══ CREATIVES ═══ -->
 <div class="page" id="page-creatives">
   <div class="page-hero">
@@ -653,13 +783,11 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       <div class="page-hero-sub">Social media creatives, ad assets and campaign visuals.</div>
     </div>
   </div>
-
   <!-- NOVEL OFFICE META ADS -->
   <div class="brochures-section">
     <div class="brochures-label">Novel Office · Meta Ads</div>
     <div class="brochures-head">Performance Ad Creatives</div>
     <p style="font-size:13px;color:var(--gray);line-height:1.8;margin:8px 0 36px;max-width:600px;">Oversaw the paid social strategy for Novel Office across Meta. Campaigns structured across three funnel objectives — building awareness with cold audiences, re-engaging warm traffic, and converting intent with direct offers. AI tools were used throughout — from brief generation and copy iteration to audience messaging refinement — compressing production time without losing creative quality.</p>
-
     <!-- BRAND AWARENESS -->
     <div class="no-goal-block">
       <div class="no-goal-label">Brand Awareness</div>
@@ -677,7 +805,6 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       </div>
       <div class="carousel-dots" id="noAwDots" style="margin-top:14px;justify-content:flex-start;"></div>
     </div>
-
     <!-- RETARGETING -->
     <div class="no-goal-block">
       <div class="no-goal-label">Retargeting</div>
@@ -694,7 +821,6 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       </div>
       <div class="carousel-dots" id="noRtDots" style="margin-top:14px;justify-content:flex-start;"></div>
     </div>
-
     <!-- LEAD GENERATION -->
     <div class="no-goal-block">
       <div class="no-goal-label">Lead Generation</div>
@@ -704,7 +830,6 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       </div>
     </div>
   </div>
-
   <!-- NSH RENDER CAROUSEL -->
   <div class="brochures-section">
     <div class="brochures-label">Novel Signature Homes — Social Media</div>
@@ -718,9 +843,9 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
               <img src="creatives/render-1.jpg.png" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
             </div>
             <div style="padding:16px 0;">
-              <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;">01 / 05 · Game Room</div>
-              <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--teal-pale);margin-bottom:12px;line-height:1.2;">Recreation & Leisure Space</div>
-              <div style="font-size:13px;color:var(--gray);line-height:1.8;">Render repurposed from MLS to social — styled to evoke lifestyle aspiration rather than just showcase square footage. Part of the elevated render series created for NSH's Instagram presence.</div>
+              <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;">01 / 05 · Outdoor</div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--teal-pale);margin-bottom:12px;line-height:1.2;">Covered Patio & Al Fresco Dining</div>
+              <div style="font-size:13px;color:var(--gray);line-height:1.8;">Outdoor living is a key selling point in Houston. Directed the brief to show the space as lifestyle-ready — entertaining, greenery, natural light.</div>
             </div>
           </div>
           <div style="min-width:100%;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;">
@@ -728,9 +853,9 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
               <img src="creatives/render-2.jpg.png" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
             </div>
             <div style="padding:16px 0;">
-              <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;">02 / 05 · Master Bathroom</div>
-              <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--teal-pale);margin-bottom:12px;line-height:1.2;">Luxury Bath & Vanity Suite</div>
-              <div style="font-size:13px;color:var(--gray);line-height:1.8;">Gold fixtures, marble countertops and ambient sconce lighting — the render brief pushed for materials and lighting that photograph as premium on mobile screens.</div>
+              <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;">02 / 05 · Primary Bedroom</div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--teal-pale);margin-bottom:12px;line-height:1.2;">Primary Suite — Calm & Considered</div>
+              <div style="font-size:13px;color:var(--gray);line-height:1.8;">Muted tones, layered textures and natural light — the brief was to evoke restraint and calm, letting the space speak rather than oversell it.</div>
             </div>
           </div>
           <div style="min-width:100%;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;">
@@ -738,9 +863,9 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
               <img src="creatives/render-3.jpg.png" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
             </div>
             <div style="padding:16px 0;">
-              <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;">03 / 05 · Outdoor</div>
-              <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--teal-pale);margin-bottom:12px;line-height:1.2;">Covered Patio & Al Fresco Dining</div>
-              <div style="font-size:13px;color:var(--gray);line-height:1.8;">Outdoor living is a key selling point in Houston. Directed the brief to show the space as lifestyle-ready — entertaining, greenery, natural light.</div>
+              <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;">03 / 05 · Kitchen</div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--teal-pale);margin-bottom:12px;line-height:1.2;">Chef's Kitchen with Marble Feature Wall</div>
+              <div style="font-size:13px;color:var(--gray);line-height:1.8;">The most-viewed post in the series. Walnut cabinetry, statement marble backsplash and island seating — briefed specifically to drive saves and shares on Instagram.</div>
             </div>
           </div>
           <div style="min-width:100%;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;">
@@ -748,9 +873,9 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
               <img src="creatives/render-4.jpg.png" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
             </div>
             <div style="padding:16px 0;">
-              <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;">04 / 05 · Kitchen</div>
-              <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--teal-pale);margin-bottom:12px;line-height:1.2;">Chef's Kitchen with Marble Feature Wall</div>
-              <div style="font-size:13px;color:var(--gray);line-height:1.8;">The most-viewed post in the series. Walnut cabinetry, statement marble backsplash and island seating — briefed specifically to drive saves and shares on Instagram.</div>
+              <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;">04 / 05 · Master Bathroom</div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--teal-pale);margin-bottom:12px;line-height:1.2;">Luxury Bath & Vanity Suite</div>
+              <div style="font-size:13px;color:var(--gray);line-height:1.8;">Gold fixtures, marble countertops and ambient sconce lighting — the render brief pushed for materials and lighting that photograph as premium on mobile screens.</div>
             </div>
           </div>
           <div style="min-width:100%;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;">
@@ -758,9 +883,9 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
               <img src="creatives/render-5.jpg.png" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
             </div>
             <div style="padding:16px 0;">
-              <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;">05 / 05 · Primary Bedroom</div>
-              <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--teal-pale);margin-bottom:12px;line-height:1.2;">Primary Suite — Calm & Considered</div>
-              <div style="font-size:13px;color:var(--gray);line-height:1.8;">Muted tones, layered textures and natural light — the brief was to evoke restraint and calm, letting the space speak rather than oversell it.</div>
+              <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;">05 / 05 · Game Room</div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--teal-pale);margin-bottom:12px;line-height:1.2;">Recreation & Leisure Space</div>
+              <div style="font-size:13px;color:var(--gray);line-height:1.8;">Render repurposed from MLS to social — styled to evoke lifestyle aspiration rather than just showcase square footage. Part of the elevated render series created for NSH's Instagram presence.</div>
             </div>
           </div>
         </div>
@@ -769,7 +894,6 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
     </div>
     <div class="carousel-dots" id="nshDots" style="margin-top:20px;"></div>
   </div>
-
   <!-- BROCHURES -->
   <div class="brochures-section">
     <div class="brochures-label">Sales Collateral & Brochures</div>
@@ -842,9 +966,8 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       </div>
     </div>
   </div>
-  <footer><p>© 2026 Ajinkya Bagade</p><div class="footer-dot"></div><p>Digital Marketing Executive</p></footer>
+  <footer><p>© 2026 Ajinkya Bagade</p><div class="footer-dot"></div><p>Team Lead - Marketing</p></footer>
 </div>
-
 <!-- ═══ EMAIL TEMPLATES ═══ -->
 <div class="page" id="page-emails">
   <div class="page-hero">
@@ -860,7 +983,6 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       <button class="carousel-arrow" id="emailPrev" onclick="moveEmail(-1)">&#8249;</button>
       <div class="carousel-viewport">
         <div class="carousel-track" id="emailTrack">
-
           <div class="email-slide">
             <div class="email-frame-wrap">
               <iframe src="emails/pine-chase.html" scrolling="yes" loading="lazy"></iframe>
@@ -872,7 +994,6 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
               <a href="emails/pine-chase.html" target="_blank" class="email-view-btn">View Full Email ↗</a>
             </div>
           </div>
-
           <div class="email-slide">
             <div class="email-frame-wrap">
               <iframe src="emails/1001-e.html" scrolling="yes" loading="lazy"></iframe>
@@ -884,7 +1005,6 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
               <a href="emails/1001-e.html" target="_blank" class="email-view-btn">View Full Email ↗</a>
             </div>
           </div>
-
           <div class="email-slide">
             <div class="email-frame-wrap">
               <iframe src="emails/heatherglen.html" scrolling="yes" loading="lazy"></iframe>
@@ -896,20 +1016,18 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
               <a href="emails/heatherglen.html" target="_blank" class="email-view-btn">View Full Email ↗</a>
             </div>
           </div>
-
           <div class="email-slide">
             <div class="email-frame-wrap">
               <iframe src="emails/marwick.html" scrolling="yes" loading="lazy"></iframe>
             </div>
             <div class="email-slide-meta">
               <div class="email-slide-tag">Property Campaign</div>
-              
+
               <div class="email-slide-title">Marwick — Listing Campaign</div>
               <div class="email-slide-desc">Editorial campaign email for the Marwick listing. Built to communicate luxury positioning and drive direct buyer enquiries.</div>
               <a href="emails/marwick.html" target="_blank" class="email-view-btn">View Full Email ↗</a>
             </div>
           </div>
-
           <div class="email-slide">
             <div class="email-frame-wrap">
               <iframe src="emails/genstar.html" scrolling="yes" loading="lazy"></iframe>
@@ -921,16 +1039,14 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
               <a href="emails/genstar.html" target="_blank" class="email-view-btn">View Full Email ↗</a>
             </div>
           </div>
-
         </div>
       </div>
       <button class="carousel-arrow" id="emailNext" onclick="moveEmail(1)">&#8250;</button>
     </div>
     <div class="carousel-dots" id="emailDots"></div>
   </div>
-  <footer><p>© 2026 Ajinkya Bagade</p><div class="footer-dot"></div><p>Digital Marketing Executive</p></footer>
+  <footer><p>© 2026 Ajinkya Bagade</p><div class="footer-dot"></div><p>Team Lead - Marketing</p></footer>
 </div>
-
 <!-- ═══ BLOGS ═══ -->
 <div class="page" id="page-blogs">
   <div class="page-hero">
@@ -970,9 +1086,8 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       <div class="blog-arrow">→</div>
     </a>
   </div>
-  <footer><p>© 2026 Ajinkya Bagade</p><div class="footer-dot"></div><p>Digital Marketing Executive</p></footer>
+  <footer><p>© 2026 Ajinkya Bagade</p><div class="footer-dot"></div><p>Team Lead - Marketing</p></footer>
 </div>
-
 <script>
 const cursor = document.getElementById('cursor');
 const glow = document.getElementById('cursorGlow');
@@ -986,8 +1101,7 @@ document.querySelectorAll('button,a,.case-card,.blog-card,.creative-card,.brochu
   el.addEventListener('mouseenter', () => { cursor.style.width='28px'; cursor.style.height='28px'; cursor.style.opacity='0.5'; });
   el.addEventListener('mouseleave', () => { cursor.style.width='12px'; cursor.style.height='12px'; cursor.style.opacity='1'; });
 });
-
-const pages = ['home','cases','creatives','emails','blogs'];
+const pages = ['home','cases','ads','creatives','emails','blogs'];
 function showPage(id) {
   pages.forEach(p => {
     const el = document.getElementById('page-' + p);
@@ -1002,7 +1116,6 @@ function showPage(id) {
   window.scrollTo(0,0);
   observeReveals();
 }
-
 function observeReveals() {
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
@@ -1010,7 +1123,6 @@ function observeReveals() {
   document.querySelectorAll('.reveal:not(.visible)').forEach(el => obs.observe(el));
 }
 observeReveals();
-
 function toggleCase(card) {
   const expand = card.querySelector('.case-expand');
   const btn = card.querySelector('.toggle-btn');
@@ -1019,7 +1131,6 @@ function toggleCase(card) {
   document.querySelectorAll('.case-expand.open').forEach(e => { e.classList.remove('open'); e.closest('.case-card').querySelector('.toggle-btn').textContent='Read More ↓'; });
   if (!isOpen) { expand.classList.add('open'); if (btn) btn.textContent = 'Close ↑'; }
 }
-
 // Generic carousel system
 const carousels = {};
 function initCarousel(id, total) {
@@ -1052,7 +1163,6 @@ function moveCarousel(id, dir) {
 }
 initCarousel('noAw', 3);
 initCarousel('noRt', 2);
-
 // NSH Render Carousel
 let nshIndex = 0;
 const nshTotal = 5;
@@ -1078,7 +1188,6 @@ function goNsh(n) {
   if (next) next.disabled = nshIndex === nshTotal - 1;
 }
 function moveNsh(dir) { goNsh(Math.max(0, Math.min(nshTotal-1, nshIndex+dir))); }
-
 // Email Carousel
 let emailIndex = 0;
 const emailSlides = document.querySelectorAll('.email-slide');
@@ -1103,7 +1212,6 @@ function goEmail(n) {
 }
 function moveEmail(dir) { goEmail(Math.max(0, Math.min(emailSlides.length-1, emailIndex+dir))); }
 goEmail(0);
-
 function filterCreatives(btn, cat) {
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
