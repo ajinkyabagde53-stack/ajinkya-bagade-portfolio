@@ -3,7 +3,20 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Ajinkya Bagade — Marketing Portfolio</title>
+<title>Ajinkya Bagade · Marketing Portfolio</title>
+<meta name="description" content="Marketing portfolio of Ajinkya Bagade, Team Lead, Marketing at Novel Office. Brand building, content, performance and lifecycle marketing, with real campaign results.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%23085041'/%3E%3Ctext%20x='32'%20y='45'%20font-family='Georgia,serif'%20font-size='32'%20font-weight='bold'%20fill='%23c8efe3'%20text-anchor='middle'%3EAB%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ajinkyabagde53-stack.github.io/ajinkya-bagade-portfolio/">
+<meta property="og:title" content="Ajinkya Bagade · Marketing Portfolio">
+<meta property="og:description" content="Team Lead, Marketing at Novel Office. Brand, content, performance and lifecycle marketing, with real campaign results.">
+<meta property="og:image" content="https://ajinkyabagde53-stack.github.io/ajinkya-bagade-portfolio/og-image.png.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ajinkya Bagade · Marketing Portfolio">
+<meta name="twitter:description" content="Team Lead, Marketing at Novel Office. Brand, content, performance and lifecycle marketing, with real campaign results.">
+<meta name="twitter:image" content="https://ajinkyabagde53-stack.github.io/ajinkya-bagade-portfolio/og-image.png.png">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -22,9 +35,9 @@
 }
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-body{font-family:'Outfit',sans-serif;background:var(--dark);color:#e0ede8;overflow-x:hidden;cursor:none;}
+body{font-family:'Outfit',sans-serif;background:var(--dark);color:#e0ede8;overflow-x:hidden;}
 /* CURSOR */
-.cursor{position:fixed;pointer-events:none;z-index:9999;width:12px;height:12px;border-radius:50%;background:var(--teal-light);transform:translate(-50%,-50%);transition:width 0.3s,height 0.3s,opacity 0.3s;mix-blend-mode:screen;}
+.cursor{display:none;position:fixed;pointer-events:none;z-index:9999;width:12px;height:12px;border-radius:50%;background:var(--teal-light);transform:translate(-50%,-50%);transition:width 0.3s,height 0.3s,opacity 0.3s;mix-blend-mode:screen;}
 .cursor-glow{position:fixed;pointer-events:none;z-index:9998;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(29,158,117,0.07) 0%,transparent 70%);transform:translate(-50%,-50%);transition:transform 0.6s ease;}
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;justify-content:space-between;align-items:center;padding:0 56px;height:68px;background:rgba(10,26,21,0.88);backdrop-filter:blur(20px);border-bottom:1px solid rgba(29,158,117,0.1);}
@@ -46,7 +59,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;justify-content
 /* HERO */
 .hero{position:relative;overflow:hidden;min-height:calc(100vh - 68px);display:flex;flex-direction:column;justify-content:center;padding:80px 56px;}
 .hero-eyebrow{font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--teal-light);margin-bottom:24px;opacity:0;animation:fadeUp 0.7s 0.2s forwards;}
-.hero-name{font-family:'Cormorant Garamond',serif;font-size:clamp(64px,10vw,130px);font-weight:300;line-height:0.9;color:var(--teal-pale);letter-spacing:-2px;margin-bottom:8px;opacity:0;animation:fadeUp 0.8s 0.35s forwards;}
+.hero-name{font-family:'Cormorant Garamond',serif;font-size:clamp(64px,10vw,130px);font-weight:300;line-height:0.9;color:var(--teal-pale);letter-spacing:-2px;margin-bottom:32px;padding-bottom:6px;opacity:0;animation:fadeUp 0.8s 0.35s forwards;}
 .hero-name span{display:block;font-style:italic;color:var(--teal-light);}
 .hero-title-row{display:flex;align-items:center;gap:20px;margin-bottom:36px;opacity:0;animation:fadeUp 0.8s 0.5s forwards;}
 .hero-title{font-size:14px;font-weight:400;letter-spacing:2px;text-transform:uppercase;color:var(--gray-light);}
@@ -241,7 +254,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
 .footer-dot{width:4px;height:4px;border-radius:50%;background:var(--teal-light);opacity:0.4;}
 /* ANIMATIONS */
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-/* CASE 02 — VISUAL COMPONENTS */
+/* CASE 02, VISUAL COMPONENTS */
 .wip-tag{font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;background:rgba(212,148,74,0.1);border:1px solid rgba(212,148,74,0.35);color:#d4944a;padding:4px 12px;border-radius:2px;}
 .phase-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(29,158,117,0.1);border:1px solid rgba(29,158,117,0.1);border-radius:4px;overflow:hidden;margin-bottom:20px;}
 .phase-block{background:rgba(10,26,21,0.95);padding:16px 14px;position:relative;}
@@ -265,7 +278,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
 .c02-sub{font-size:10px;color:rgba(138,173,160,0.6);display:flex;justify-content:space-between;}
 .c02-sub span{color:rgba(200,239,227,0.5);}
 .c02-organic{margin-top:10px;padding-top:8px;border-top:1px solid rgba(29,158,117,0.1);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(29,158,117,0.5);}
-/* NOVEL OFFICE — GOAL BLOCKS */
+/* NOVEL OFFICE, GOAL BLOCKS */
 .no-goal-block{padding:32px 0;border-top:1px solid rgba(29,158,117,0.1);}
 .no-goal-block:first-of-type{border-top:none;padding-top:8px;}
 .no-goal-label{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--teal-light);font-weight:600;margin-bottom:6px;}
@@ -273,6 +286,36 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
 .no-goal-carousel{display:flex;align-items:center;gap:16px;max-width:560px;}
 .no-goal-carousel .carousel-arrow{width:40px;height:40px;font-size:22px;flex-shrink:0;}
 @media(max-width:768px){.phase-strip{grid-template-columns:1fr;}.c02-metrics{grid-template-columns:1fr;}}
+/* --- upgrades --- */
+.hero .dot-grid{inset:-40px;transition:transform .25s ease-out;}
+.perf-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:720px;margin-top:8px;}
+.perf-grid img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;display:block;border:1px solid rgba(29,158,117,0.12);}
+.nsh-chart{display:grid;grid-template-columns:1.6fr 1fr;gap:28px;align-items:center;background:rgba(13,107,84,0.08);border:1px solid rgba(29,158,117,0.14);border-radius:8px;padding:26px 28px;margin-bottom:20px;}
+.nsh-bar{margin-bottom:18px;}
+.nsh-bar:last-child{margin-bottom:0;}
+.nsh-bar-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:7px;}
+.nsh-plat{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gray-light);}
+.nsh-val{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--teal-pale);font-weight:300;}
+.nsh-track{height:7px;background:rgba(29,158,117,0.1);border-radius:4px;overflow:hidden;}
+.nsh-fill{height:100%;background:linear-gradient(90deg,var(--teal),var(--teal-light));border-radius:4px;transform:scaleX(0);transform-origin:left;animation:nshGrow 1.3s .15s cubic-bezier(.2,.7,.2,1) forwards;}
+.nsh-sub{font-size:10px;color:rgba(138,173,160,0.7);margin-top:6px;}
+.nsh-total{text-align:center;border-left:1px solid rgba(29,158,117,0.14);padding-left:26px;}
+.nsh-total-n{font-family:'Cormorant Garamond',serif;font-size:60px;font-weight:300;color:var(--teal-light);line-height:1;letter-spacing:-2px;}
+.nsh-total-l{font-size:12px;color:var(--gray);margin-top:8px;}
+.nsh-total-o{display:inline-block;margin-top:12px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);border:1px solid rgba(29,158,117,0.3);border-radius:2px;padding:5px 11px;}
+@keyframes nshGrow{to{transform:scaleX(1);}}
+@media(max-width:768px){
+  .nsh-chart{grid-template-columns:1fr;}
+  .nsh-total{border-left:none;border-top:1px solid rgba(29,158,117,0.14);padding-left:0;padding-top:22px;margin-top:4px;}
+  .nav-links{overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none;}
+  .nav-links::-webkit-scrollbar{display:none;}
+  .nav-btn{white-space:nowrap;flex-shrink:0;}
+  .email-slide{grid-template-columns:1fr;gap:20px;}
+  .email-frame-wrap{height:460px;}
+  #nshTrack > div{grid-template-columns:1fr !important;gap:16px !important;}
+  .perf-grid{grid-template-columns:1fr;}
+}
+/* --- end upgrades --- */
 @media(max-width:768px){
   nav{padding:0 24px;}
   .nav-links{gap:0;}
@@ -322,7 +365,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
         <div class="hero-title-dot"></div>
         <div class="hero-title">Novel Office</div>
       </div>
-      <div class="hero-desc">Bridging marketing strategy, creative direction and execution — across content, brand, email and digital channels.</div>
+      <div class="hero-desc">Bridging marketing strategy, creative direction and execution across content, brand, email and digital channels.</div>
       <div class="hero-actions">
         <button class="btn btn-p" onclick="showPage('cases')">View My Work</button>
         <button class="btn btn-o" onclick="document.getElementById('contact-home').scrollIntoView({behavior:'smooth'})">Let's Talk</button>
@@ -346,9 +389,9 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       <div class="about-heading">Four years.<br>Many hats.<br><em style="font-style:italic;color:var(--teal-light)">No half measures.</em></div>
     </div>
     <div>
-      <p class="about-text">I started in content — learning how words shape perception, how a single line can make someone stop scrolling. That foundation never left me. It just got bigger. Over four years I moved from writing to strategy, from strategy to creative direction, from creative direction to leading a team that does all of it.</p>
-      <p class="about-text" style="margin-top:20px;">At Novel Office, I built the brand's voice, tone and guidelines from the ground up — and then made sure they showed up consistently across every channel, every campaign and every piece of collateral we touched. I don't just run campaigns. I build the systems behind them.</p>
-      <p class="about-text" style="margin-top:20px;">AI is now central to how I work — not as a shortcut, but as a force multiplier. I use it every day across content, design and code. I'm currently building AI agents from scratch and actively upskilling in how they're architected and deployed. The intersection of marketing and machine intelligence is where I spend a lot of my thinking time.</p>
+      <p class="about-text">I started in content, learning how words shape perception, how a single line can make someone stop scrolling. That foundation never left me. It just got bigger. Over four years I moved from writing to strategy, from strategy to creative direction, from creative direction to leading a team that does all of it.</p>
+      <p class="about-text" style="margin-top:20px;">At Novel Office, I built the brand's voice, tone and guidelines from the ground up, and then made sure they showed up consistently across every channel, every campaign and every piece of collateral we touched. I don't just run campaigns. I build the systems behind them.</p>
+      <p class="about-text" style="margin-top:20px;">AI is now central to how I work, not as a shortcut, but as a force multiplier. I use it every day across content, design and code. I’m currently building AI agents from scratch and actively upskilling in how they’re architected and deployed. The intersection of marketing and machine intelligence is where I spend a lot of my thinking time.</p>
     </div>
   </div>
   <section class="skills-section">
@@ -356,11 +399,11 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       <div class="s-label reveal">What I Do</div>
       <div class="s-head reveal">Full-funnel.<br>End-to-end.</div>
       <div class="skills-grid">
-        <div class="skill-card reveal"><div class="skill-icon">🎯</div><h3>Performance Marketing</h3><p>Google Ads, Meta Ads, PPC — collaborating on audience strategy, creative testing and campaign reporting.</p></div>
+        <div class="skill-card reveal"><div class="skill-icon">🎯</div><h3>Performance Marketing</h3><p>Google Ads, Meta Ads, PPC, collaborating on audience strategy, creative testing and campaign reporting.</p></div>
         <div class="skill-card reveal"><div class="skill-icon">✍️</div><h3>Content & Brand</h3><p>Brand guidelines, voice & tone, content strategy, copywriting and video shoot direction across all channels.</p></div>
         <div class="skill-card reveal"><div class="skill-icon">📧</div><h3>Lifecycle & Email</h3><p>Automated nurture flows, audience segmentation, A/B testing and retention campaigns via MailChimp.</p></div>
-        <div class="skill-card reveal"><div class="skill-icon">📐</div><h3>Creative Direction</h3><p>End-to-end Figma production — social creatives, sales collateral, brochures, presentations and luxury real estate marketing materials.</p></div>
-        <div class="skill-card reveal"><div class="skill-icon">🤖</div><h3>AI & Agent Building</h3><p>Daily practitioner across content, design and code. Building AI agents from scratch and upskilling in agent architecture — using AI to compress timelines without compromising quality.</p></div>
+        <div class="skill-card reveal"><div class="skill-icon">📐</div><h3>Creative Direction</h3><p>End-to-end Figma production, social creatives, sales collateral, brochures, presentations and luxury real estate marketing materials.</p></div>
+        <div class="skill-card reveal"><div class="skill-icon">🤖</div><h3>AI & Agent Building</h3><p>Daily practitioner across content, design and code. Building AI agents from scratch and upskilling in agent architecture, using AI to compress timelines without compromising quality.</p></div>
         <div class="skill-card reveal"><div class="skill-icon">👥</div><h3>Leadership & Hiring</h3><p>Team coordination, 20+ interviews conducted, 3 hires made. Vendor liaison and cross-functional communication.</p></div>
       </div>
     </div>
@@ -373,7 +416,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
         <div class="creds-education">
           <div class="cred-sub-label">Education</div>
           <div class="edu-card">
-            <div class="edu-logo"><img src="certifications/university-of-york.png" alt="University of York"></div>
+            <div class="edu-logo"><img src="certifications/university-of-york.png.png" alt="University of York"></div>
             <div class="edu-text">
               <div class="edu-degree">MSc Global Marketing</div>
               <div class="edu-school">University of York</div>
@@ -384,15 +427,15 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
           <div class="cred-sub-label">Certifications</div>
           <div class="badges-row">
             <div class="badge">
-              <div class="badge-img"><img src="certifications/google-ads-search.png" alt="Google Ads Search Certified"></div>
+              <div class="badge-img"><img src="certifications/google-ads-search.png.png" alt="Google Ads Search Certified"></div>
               <div class="badge-name">Google Ads<br>Search</div>
             </div>
             <div class="badge">
-              <div class="badge-img"><img src="certifications/google-ads-display.png" alt="Google Ads Display Certified"></div>
+              <div class="badge-img"><img src="certifications/google-ads-display.png.png" alt="Google Ads Display Certified"></div>
               <div class="badge-name">Google Ads<br>Display</div>
             </div>
             <div class="badge">
-              <div class="badge-img"><img src="certifications/google-ads-video.png" alt="Google Ads Video Certified"></div>
+              <div class="badge-img"><img src="certifications/google-ads-video.png.png" alt="Google Ads Video Certified"></div>
               <div class="badge-name">Google Ads<br>Video</div>
             </div>
           </div>
@@ -405,7 +448,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       <div class="contact-inner">
         <div class="contact-left reveal">
           <h2>Always up for a good conversation.</h2>
-          <p>Whether it's a new opportunity, a collaboration or just a chat about marketing — reach out.</p>
+          <p>Whether it's a new opportunity, a collaboration or just a chat about marketing, reach out.</p>
         </div>
         <div class="contact-links reveal">
           <a href="mailto:ajinkyadb05@gmail.com" class="contact-link"><div class="cl-icon">✉️</div><div><div class="cl-label">Email</div><div class="cl-val">ajinkyadb05@gmail.com</div></div></a>
@@ -432,9 +475,9 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       <div class="case-content">
         <div class="case-tag-row"><span class="c-tag">Brand</span><span class="c-tag">Guidelines</span></div>
         <div class="case-title">Building Novel Office's Brand Foundation</div>
-        <div class="case-body">Developed the brand's voice, tone and guidelines from scratch — creating a cohesive identity that could scale across every channel and every team member.</div>
+        <div class="case-body">Developed the brand's voice, tone and guidelines from scratch, creating a cohesive identity that could scale across every channel and every team member.</div>
         <div class="case-expand">
-          <p>When I joined Novel Office, the brand didn't have a defined identity. Every piece of communication sounded different. I built the brand guidelines from the ground up — documenting the voice, tone, messaging pillars and visual direction that now govern everything we produce.</p>
+          <p>When I joined Novel Office, the brand didn't have a defined identity. Every piece of communication sounded different. I built the brand guidelines from the ground up, documenting the voice, tone, messaging pillars and visual direction that now govern everything we produce.</p>
           <p>This wasn't just a document. It became the operating system for the entire marketing team. Every brief, every post, every email now starts from a clear foundation.</p>
           <div class="case-result-pill">📋 Brand guidelines now used across all channels</div>
           <div class="tools-row"><span class="tool">Brand Strategy</span><span class="tool">Figma</span><span class="tool">Copywriting</span></div>
@@ -446,7 +489,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       <div class="case-num">02</div>
       <div class="case-content">
         <div class="case-tag-row"><span class="c-tag">Content Strategy</span><span class="c-tag">Creative Direction</span><span class="c-tag">Social Media</span><span class="wip-tag">↻ Work in Progress</span></div>
-        <div class="case-title">Building a Content Engine from Zero — NSH</div>
+        <div class="case-title">Building a Content Engine from Zero · NSH</div>
         <div class="case-body">Inherited channels with no marketing content and no plan. Built the strategy, directed original shoots, and grew all three platforms entirely through organic content.</div>
         <div class="case-expand">
           <!-- Phase strip -->
@@ -482,37 +525,13 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
             <div class="pillar"><span class="pillar-icon">🛋️</span> Staging Shoots</div>
           </div>
           <!-- Metrics -->
-          <div class="c02-metrics">
-            <div class="c02-metric">
-              <div class="c02-platform">YouTube</div>
-              <div class="c02-num">9.8K</div>
-              <div class="c02-unit">Views</div>
-              <div class="c02-subs">
-                <div class="c02-sub">Subscribers <span>238</span></div>
-                <div class="c02-sub">Watch time <span>23.6 hrs</span></div>
-              </div>
-              <div class="c02-organic">100% Organic</div>
+          <div class="nsh-chart">
+            <div class="nsh-bars">
+              <div class="nsh-bar"><div class="nsh-bar-top"><span class="nsh-plat">Instagram</span><span class="nsh-val">37.6K</span></div><div class="nsh-track"><div class="nsh-fill" style="width:100%"></div></div><div class="nsh-sub">Reach 4.3K · Interactions 1.7K</div></div>
+              <div class="nsh-bar"><div class="nsh-bar-top"><span class="nsh-plat">YouTube</span><span class="nsh-val">9.8K</span></div><div class="nsh-track"><div class="nsh-fill" style="width:26%"></div></div><div class="nsh-sub">Subscribers 238 · 23.6 hrs watch time</div></div>
+              <div class="nsh-bar"><div class="nsh-bar-top"><span class="nsh-plat">Facebook</span><span class="nsh-val">5.8K</span></div><div class="nsh-track"><div class="nsh-fill" style="width:15%"></div></div><div class="nsh-sub">Viewers 2.6K · Interactions 170</div></div>
             </div>
-            <div class="c02-metric">
-              <div class="c02-platform">Instagram</div>
-              <div class="c02-num">37.6K</div>
-              <div class="c02-unit">Views</div>
-              <div class="c02-subs">
-                <div class="c02-sub">Reach <span>4.3K</span></div>
-                <div class="c02-sub">Interactions <span>1.7K</span></div>
-              </div>
-              <div class="c02-organic">100% Organic</div>
-            </div>
-            <div class="c02-metric">
-              <div class="c02-platform">Facebook</div>
-              <div class="c02-num">5.8K</div>
-              <div class="c02-unit">Views</div>
-              <div class="c02-subs">
-                <div class="c02-sub">Viewers <span>2.6K</span></div>
-                <div class="c02-sub">Interactions <span>170</span></div>
-              </div>
-              <div class="c02-organic">100% Organic</div>
-            </div>
+            <div class="nsh-total"><div class="nsh-total-n">53K+</div><div class="nsh-total-l">Total Organic Views</div><div class="nsh-total-o">100% Organic · Zero Spend</div></div>
           </div>
           <div class="case-result-pill">📈 Zero paid spend across all channels</div>
           <div class="tools-row"><span class="tool">Content Strategy</span><span class="tool">Creative Direction</span><span class="tool">Drone Production</span><span class="tool">Instagram</span><span class="tool">Facebook</span><span class="tool">YouTube</span></div>
@@ -525,7 +544,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       <div class="case-content">
         <div class="case-tag-row"><span class="c-tag">Creative Direction</span><span class="c-tag">Sales Collateral</span></div>
         <div class="case-title">End-to-End Luxury Real Estate Marketing Materials</div>
-        <div class="case-body">Designed and produced all marketing collateral for luxury residential developments — brochures, presentations, sales decks and digital assets — from brief to final delivery.</div>
+        <div class="case-body">Designed and produced all marketing collateral for luxury residential developments, brochures, presentations, sales decks and digital assets, from brief to final delivery.</div>
         <div style="margin-top:16px;font-size:11px;letter-spacing:2px;color:var(--teal-light);text-transform:uppercase;">View Collateral Suite →</div>
       </div>
     </div>
@@ -534,9 +553,9 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       <div class="case-content">
         <div class="case-tag-row"><span class="c-tag">Email</span><span class="c-tag">Automation</span></div>
         <div class="case-title">Building a Lifecycle Marketing System</div>
-        <div class="case-body">Designed and implemented automated email nurture workflows — onboarding, re-engagement and retention flows with proper segmentation and A/B testing.</div>
+        <div class="case-body">Designed and implemented automated email nurture workflows, onboarding, re-engagement and retention flows with proper segmentation and A/B testing.</div>
         <div class="case-expand">
-          <p>Built a structured lead management system that handles every enquiry — from the moment someone submits a website form or writes directly via email — through to full team notification and follow-up. Every step is defined, every person knows their role, and no lead falls through.</p>
+          <p>Built a structured lead management system that handles every enquiry, from the moment someone submits a website form or writes directly via email, through to full team notification and follow-up. Every step is defined, every person knows their role, and no lead falls through.</p>
           <p>On contact, a thank-you email is automatically triggered to the lead. Internally, the enquiry flows through a defined pipeline: admin filter → ERP entry → marketing handoff → engagement summary → full team briefing.</p>
           <svg viewBox="0 0 640 746" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:640px;display:block;margin:28px 0;border-radius:4px;">
             <defs>
@@ -616,7 +635,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
         <div class="case-title">Automating Monthly Marketing Reports</div>
         <div class="case-body">Monthly reporting was a manual, time-consuming process. I built an automated system that consolidated performance data across channels into a clean, shareable format every month.</div>
         <div class="case-expand">
-          <p>Used AI tools to build a workflow that pulls data, formats it and produces a consistent monthly report — removing the dependency on any one person and freeing the team to focus on actual marketing work.</p>
+          <p>Used AI tools to build a workflow that pulls data, formats it and produces a consistent monthly report, removing the dependency on any one person and freeing the team to focus on actual marketing work.</p>
           <svg viewBox="0 0 640 774" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:640px;display:block;margin:28px 0;border-radius:4px;">
             <defs>
               <marker id="arr-rpt" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
@@ -649,7 +668,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
             <text x="328" y="227" font-family="Outfit,sans-serif" font-size="9" fill="#1d9e75">✓</text>
             <!-- 03 PULL DATA -->
             <rect x="120" y="234" width="400" height="68" rx="3" fill="rgba(13,107,84,0.18)" stroke="rgba(29,158,117,0.25)" stroke-width="1"/>
-            <text x="140" y="253" font-family="Outfit,sans-serif" font-size="9" fill="#1d9e75" letter-spacing="2">03  PULL DATA — 6 API CALLS</text>
+            <text x="140" y="253" font-family="Outfit,sans-serif" font-size="9" fill="#1d9e75" letter-spacing="2">03  PULL DATA · 6 API CALLS</text>
             <text x="140" y="273" font-family="Outfit,sans-serif" font-size="13" fill="#e0ede8">GA4 &amp; ERP Queried in Parallel</text>
             <text x="140" y="291" font-family="Outfit,sans-serif" font-size="10" fill="#8aada0">GA4: Traffic · Pages · Social · Key Events  ·  ERP: Leads by Channel</text>
             <line x1="320" y1="302" x2="320" y2="320" stroke="#1d9e75" stroke-width="1.5" marker-end="url(#arr-rpt)"/>
@@ -683,7 +702,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
             <line x1="320" y1="664" x2="320" y2="682" stroke="#d4944a" stroke-width="1.5" marker-end="url(#arr-rpt-amb)"/>
             <!-- 08 MANUAL FINISH (amber, dashed) -->
             <rect x="120" y="686" width="400" height="68" rx="3" fill="rgba(40,25,8,0.5)" stroke="#d4944a" stroke-width="1" stroke-dasharray="4 3"/>
-            <text x="140" y="705" font-family="Outfit,sans-serif" font-size="9" fill="#d4944a" letter-spacing="2">08  MANUAL FINISH — ~10 MIN</text>
+            <text x="140" y="705" font-family="Outfit,sans-serif" font-size="9" fill="#d4944a" letter-spacing="2">08  MANUAL FINISH · ~10 MIN</text>
             <text x="140" y="725" font-family="Outfit,sans-serif" font-size="13" fill="#e0ede8">Clarity Export · Insights Commentary</text>
             <text x="140" y="743" font-family="Outfit,sans-serif" font-size="10" fill="#8aada0">Rage Clicks · Scroll Depth · Bot Traffic · Monthly Review</text>
           </svg>
@@ -697,7 +716,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       <div class="case-num">06</div>
       <div class="case-content">
         <div class="case-tag-row"><span class="c-tag">Brand Strategy</span><span class="c-tag">FMCG</span></div>
-        <div class="case-title">Ethical Marketing & Sustainability — Nestlé India</div>
+        <div class="case-title">Ethical Marketing & Sustainability · Nestlé India</div>
         <div class="case-body">A case study exploring how Nestlé India balances brand integrity, consumer trust and environmental responsibility in one of the world's most competitive FMCG landscapes.</div>
         <div style="margin-top:16px;font-size:11px;letter-spacing:2px;color:var(--teal-light);text-transform:uppercase;">Read Article →</div>
       </div>
@@ -707,7 +726,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       <div class="case-content">
         <div class="case-tag-row"><span class="c-tag">Global Marketing</span><span class="c-tag">Localisation</span></div>
         <div class="case-title">IKEA's Success in Glocalising Its Marketing Strategy in China</div>
-        <div class="case-body">How a Swedish furniture giant rewrote its entire playbook to win in one of the world's most complex consumer markets — and what every global brand can learn from it.</div>
+        <div class="case-body">How a Swedish furniture giant rewrote its entire playbook to win in one of the world's most complex consumer markets, and what every global brand can learn from it.</div>
         <div style="margin-top:16px;font-size:11px;letter-spacing:2px;color:var(--teal-light);text-transform:uppercase;">Read Article →</div>
       </div>
     </a>
@@ -721,7 +740,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
     <div style="max-width:1100px;margin:0 auto;position:relative;">
       <div class="page-hero-label">Performance Marketing</div>
       <div class="page-hero-title">Paid Ads</div>
-      <div class="page-hero-sub">Managing paid acquisition across Google and Meta — full-funnel structure, creative testing and reporting, with AI woven through briefing, iteration and optimisation.</div>
+      <div class="page-hero-sub">Managing paid acquisition across Google and Meta, full-funnel structure, creative testing and reporting, with AI woven through briefing, iteration and optimisation.</div>
     </div>
   </div>
   <div class="ads-wrap">
@@ -749,8 +768,8 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
         <div class="ads-metric"><div class="ads-metric-l">Campaigns</div><div class="ads-metric-n">11</div></div>
       </div>
       <div class="ads-dashboard">
-        <img src="ads/google-ads-dashboard.png" alt="Google Ads console overview" onerror="this.closest('.ads-dashboard').style.display='none'">
-        <div class="ads-dash-cap">Google Ads Console · Overview — Jun 2025 to Jun 2026</div>
+        <img src="ads/google-ads-dashboard.png.png" alt="Google Ads console overview" onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='ads/google-ads-dashboard.jpg.jpg';}else{this.closest('.ads-dashboard').style.display='none';}">
+        <div class="ads-dash-cap">Google Ads Console · Overview, Jun 2025 to Jun 2026</div>
       </div>
     </div>
     <!-- META -->
@@ -787,52 +806,38 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
   <div class="brochures-section">
     <div class="brochures-label">Novel Office · Meta Ads</div>
     <div class="brochures-head">Performance Ad Creatives</div>
-    <p style="font-size:13px;color:var(--gray);line-height:1.8;margin:8px 0 36px;max-width:600px;">Oversaw the paid social strategy for Novel Office across Meta. Campaigns structured across three funnel objectives — building awareness with cold audiences, re-engaging warm traffic, and converting intent with direct offers. AI tools were used throughout — from brief generation and copy iteration to audience messaging refinement — compressing production time without losing creative quality.</p>
+    <p style="font-size:13px;color:var(--gray);line-height:1.8;margin:8px 0 36px;max-width:600px;">Oversaw the paid social strategy for Novel Office across Meta. Campaigns structured across three funnel objectives, building awareness with cold audiences, re-engaging warm traffic, and converting intent with direct offers. AI tools were used throughout, from brief generation and copy iteration to audience messaging refinement, compressing production time without losing creative quality.</p>
     <!-- BRAND AWARENESS -->
     <div class="no-goal-block">
       <div class="no-goal-label">Brand Awareness</div>
       <div class="no-goal-desc">Top-of-funnel creatives served to cold audiences. Goal: introduce Novel Office as a premium managed workspace and drive initial brand recall.</div>
-      <div class="no-goal-carousel">
-        <button class="carousel-arrow" id="noAwPrev" onclick="moveCarousel('noAw',-1)">&#8249;</button>
-        <div style="flex:1;overflow:hidden;border-radius:4px;">
-          <div id="noAwTrack" style="display:flex;transition:transform 0.45s cubic-bezier(0.4,0,0.2,1);">
-            <div style="min-width:100%;"><img src="creatives/no-awareness-1.jpg.jpg" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;display:block;border:1px solid rgba(29,158,117,0.12);" onerror="this.style.opacity='0.15'"></div>
-            <div style="min-width:100%;"><img src="creatives/no-awareness-2.jpg.jpg" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;display:block;border:1px solid rgba(29,158,117,0.12);" onerror="this.style.opacity='0.15'"></div>
-            <div style="min-width:100%;"><img src="creatives/no-awareness-3.jpg.jpg" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;display:block;border:1px solid rgba(29,158,117,0.12);" onerror="this.style.opacity='0.15'"></div>
-          </div>
-        </div>
-        <button class="carousel-arrow" id="noAwNext" onclick="moveCarousel('noAw',1)">&#8250;</button>
+      <div class="perf-grid">
+        <img src="creatives/no-awareness-1.jpg.jpg" onerror="this.style.opacity='0.15'">
+        <img src="creatives/no-awareness-2.jpg.jpg" onerror="this.style.opacity='0.15'">
+        <img src="creatives/no-awareness-3.jpg.jpg" onerror="this.style.opacity='0.15'">
       </div>
-      <div class="carousel-dots" id="noAwDots" style="margin-top:14px;justify-content:flex-start;"></div>
     </div>
     <!-- RETARGETING -->
     <div class="no-goal-block">
       <div class="no-goal-label">Retargeting</div>
-      <div class="no-goal-desc">Mid-funnel creatives served to warm audiences — people who'd visited the site, watched a video, or interacted with previous ads. Goal: bring them back and reinforce the proposition.</div>
-      <div class="no-goal-carousel">
-        <button class="carousel-arrow" id="noRtPrev" onclick="moveCarousel('noRt',-1)">&#8249;</button>
-        <div style="flex:1;overflow:hidden;border-radius:4px;">
-          <div id="noRtTrack" style="display:flex;transition:transform 0.45s cubic-bezier(0.4,0,0.2,1);">
-            <div style="min-width:100%;"><img src="creatives/no-retargeting-1.jpg.jpg" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;display:block;border:1px solid rgba(29,158,117,0.12);" onerror="this.style.opacity='0.15'"></div>
-            <div style="min-width:100%;"><img src="creatives/no-retargeting-2.jpg.jpg" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;display:block;border:1px solid rgba(29,158,117,0.12);" onerror="this.style.opacity='0.15'"></div>
-          </div>
-        </div>
-        <button class="carousel-arrow" id="noRtNext" onclick="moveCarousel('noRt',1)">&#8250;</button>
+      <div class="no-goal-desc">Mid-funnel creatives served to warm audiences, people who'd visited the site, watched a video, or interacted with previous ads. Goal: bring them back and reinforce the proposition.</div>
+      <div class="perf-grid">
+        <img src="creatives/no-retargeting-1.jpg.jpg" onerror="this.style.opacity='0.15'">
+        <img src="creatives/no-retargeting-2.jpg.jpg" onerror="this.style.opacity='0.15'">
       </div>
-      <div class="carousel-dots" id="noRtDots" style="margin-top:14px;justify-content:flex-start;"></div>
     </div>
     <!-- LEAD GENERATION -->
     <div class="no-goal-block">
       <div class="no-goal-label">Lead Generation</div>
       <div class="no-goal-desc">Bottom-of-funnel creative with a direct incentive. Goal: convert high-intent prospects into enquiries and trial bookings with a time-sensitive offer.</div>
-      <div style="max-width:560px;margin-top:4px;">
-        <img src="creatives/no-leadgen.jpg.jpg" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;display:block;border:1px solid rgba(29,158,117,0.12);" onerror="this.style.opacity='0.15'">
+      <div class="perf-grid">
+        <img src="creatives/no-leadgen.jpg.jpg" onerror="this.style.opacity='0.15'">
       </div>
     </div>
   </div>
   <!-- NSH RENDER CAROUSEL -->
   <div class="brochures-section">
-    <div class="brochures-label">Novel Signature Homes — Social Media</div>
+    <div class="brochures-label">Novel Signature Homes · Social Media</div>
     <div class="brochures-head">Render Series · Instagram Posts</div>
     <div style="display:flex;align-items:center;gap:20px;margin-top:8px;">
       <button class="carousel-arrow" id="nshPrev" onclick="moveNsh(-1)">&#8249;</button>
@@ -845,7 +850,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
             <div style="padding:16px 0;">
               <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;">01 / 05 · Outdoor</div>
               <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--teal-pale);margin-bottom:12px;line-height:1.2;">Covered Patio & Al Fresco Dining</div>
-              <div style="font-size:13px;color:var(--gray);line-height:1.8;">Outdoor living is a key selling point in Houston. Directed the brief to show the space as lifestyle-ready — entertaining, greenery, natural light.</div>
+              <div style="font-size:13px;color:var(--gray);line-height:1.8;">Outdoor living is a key selling point in Houston. Directed the brief to show the space as lifestyle-ready, entertaining, greenery, natural light.</div>
             </div>
           </div>
           <div style="min-width:100%;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;">
@@ -854,8 +859,8 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
             </div>
             <div style="padding:16px 0;">
               <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;">02 / 05 · Primary Bedroom</div>
-              <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--teal-pale);margin-bottom:12px;line-height:1.2;">Primary Suite — Calm & Considered</div>
-              <div style="font-size:13px;color:var(--gray);line-height:1.8;">Muted tones, layered textures and natural light — the brief was to evoke restraint and calm, letting the space speak rather than oversell it.</div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--teal-pale);margin-bottom:12px;line-height:1.2;">Primary Suite · Calm & Considered</div>
+              <div style="font-size:13px;color:var(--gray);line-height:1.8;">Muted tones, layered textures and natural light. The brief was to evoke restraint and calm, letting the space speak rather than oversell it.</div>
             </div>
           </div>
           <div style="min-width:100%;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;">
@@ -865,7 +870,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
             <div style="padding:16px 0;">
               <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;">03 / 05 · Kitchen</div>
               <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--teal-pale);margin-bottom:12px;line-height:1.2;">Chef's Kitchen with Marble Feature Wall</div>
-              <div style="font-size:13px;color:var(--gray);line-height:1.8;">The most-viewed post in the series. Walnut cabinetry, statement marble backsplash and island seating — briefed specifically to drive saves and shares on Instagram.</div>
+              <div style="font-size:13px;color:var(--gray);line-height:1.8;">The most-viewed post in the series. Walnut cabinetry, statement marble backsplash and island seating, briefed specifically to drive saves and shares on Instagram.</div>
             </div>
           </div>
           <div style="min-width:100%;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;">
@@ -875,7 +880,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
             <div style="padding:16px 0;">
               <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;">04 / 05 · Master Bathroom</div>
               <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--teal-pale);margin-bottom:12px;line-height:1.2;">Luxury Bath & Vanity Suite</div>
-              <div style="font-size:13px;color:var(--gray);line-height:1.8;">Gold fixtures, marble countertops and ambient sconce lighting — the render brief pushed for materials and lighting that photograph as premium on mobile screens.</div>
+              <div style="font-size:13px;color:var(--gray);line-height:1.8;">Gold fixtures, marble countertops and ambient sconce lighting. The render brief pushed for materials and lighting that photograph as premium on mobile screens.</div>
             </div>
           </div>
           <div style="min-width:100%;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;">
@@ -885,7 +890,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
             <div style="padding:16px 0;">
               <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;">05 / 05 · Game Room</div>
               <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--teal-pale);margin-bottom:12px;line-height:1.2;">Recreation & Leisure Space</div>
-              <div style="font-size:13px;color:var(--gray);line-height:1.8;">Render repurposed from MLS to social — styled to evoke lifestyle aspiration rather than just showcase square footage. Part of the elevated render series created for NSH's Instagram presence.</div>
+              <div style="font-size:13px;color:var(--gray);line-height:1.8;">Render repurposed from MLS to social, styled to evoke lifestyle aspiration rather than just showcase square footage. Part of the elevated render series created for NSH's Instagram presence.</div>
             </div>
           </div>
         </div>
@@ -906,7 +911,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
         </div>
         <div class="brochure-info">
           <div class="brochure-info-left">
-            <div class="brochure-info-title">3224 Amherst — Luxury Listing</div>
+            <div class="brochure-info-title">3224 Amherst · Luxury Listing</div>
             <div class="brochure-info-desc">Premium listing brochure for a 5,897 sq ft transitional cottage in University Park, Dallas. Offered at $4,894,000.</div>
           </div>
           <a href="brochures/amherst.pdf" target="_blank" class="brochure-btn">View ↗</a>
@@ -932,7 +937,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
         </div>
         <div class="brochure-info">
           <div class="brochure-info-left">
-            <div class="brochure-info-title">Marwick Dr — Listing Brochure</div>
+            <div class="brochure-info-title">Marwick Dr · Listing Brochure</div>
             <div class="brochure-info-desc">Bi-fold property brochure for a fully renovated single-story home in Plano, TX. Asking $449,900.</div>
           </div>
           <a href="brochures/marwick.pdf" target="_blank" class="brochure-btn">View ↗</a>
@@ -945,7 +950,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
         </div>
         <div class="brochure-info">
           <div class="brochure-info-left">
-            <div class="brochure-info-title">Pinnacle — Multi-Property Brochure</div>
+            <div class="brochure-info-title">Pinnacle · Multi-Property Brochure</div>
             <div class="brochure-info-desc">Tri-fold brochure showcasing three fully renovated move-in-ready homes across Dallas and Plano, DFW.</div>
           </div>
           <a href="brochures/pinnacle.pdf" target="_blank" class="brochure-btn">View ↗</a>
@@ -958,7 +963,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
         </div>
         <div class="brochure-info">
           <div class="brochure-info-left">
-            <div class="brochure-info-title">Genstar — Listing Brochure</div>
+            <div class="brochure-info-title">Genstar · Listing Brochure</div>
             <div class="brochure-info-desc">Bi-fold property brochure for a fully renovated single-story home in Preston Heights of North Dallas, TX. Asking $599,400.</div>
           </div>
           <a href="brochures/genstar.pdf" target="_blank" class="brochure-btn">View ↗</a>
@@ -975,7 +980,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
     <div style="max-width:1100px;margin:0 auto;position:relative;">
       <div class="page-hero-label">Lifecycle Marketing</div>
       <div class="page-hero-title">Email Templates</div>
-      <div class="page-hero-sub">Property campaign emails designed and written end-to-end — from brief to send-ready. AI-assisted throughout: structure, subject lines, segmentation logic and copy refinement.</div>
+      <div class="page-hero-sub">Property campaign emails designed and written end-to-end, from brief to send-ready. AI-assisted throughout: structure, subject lines, segmentation logic and copy refinement.</div>
     </div>
   </div>
   <div class="email-carousel-section">
@@ -989,7 +994,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
             </div>
             <div class="email-slide-meta">
               <div class="email-slide-tag">Property Campaign</div>
-              <div class="email-slide-title">Pine Chase — Delivered</div>
+              <div class="email-slide-title">Pine Chase · Delivered</div>
               <div class="email-slide-desc">Property announcement email for Pine Chase. Designed to create urgency and drive buyer engagement with a clean, brand-aligned layout.</div>
               <a href="emails/pine-chase.html" target="_blank" class="email-view-btn">View Full Email ↗</a>
             </div>
@@ -1000,7 +1005,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
             </div>
             <div class="email-slide-meta">
               <div class="email-slide-tag">Property Campaign</div>
-              <div class="email-slide-title">1001 E — Listing Campaign</div>
+              <div class="email-slide-title">1001 E · Listing Campaign</div>
               <div class="email-slide-desc">Campaign email for the 1001 E listing. Built to highlight key property features and drive prospective buyer action through focused copy and layout.</div>
               <a href="emails/1001-e.html" target="_blank" class="email-view-btn">View Full Email ↗</a>
             </div>
@@ -1011,7 +1016,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
             </div>
             <div class="email-slide-meta">
               <div class="email-slide-tag">Property Campaign</div>
-              <div class="email-slide-title">Heatherglen — Listing Campaign</div>
+              <div class="email-slide-title">Heatherglen · Listing Campaign</div>
               <div class="email-slide-desc">Property campaign email for Heatherglen. Designed to communicate premium positioning and encourage direct buyer enquiries.</div>
               <a href="emails/heatherglen.html" target="_blank" class="email-view-btn">View Full Email ↗</a>
             </div>
@@ -1023,7 +1028,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
             <div class="email-slide-meta">
               <div class="email-slide-tag">Property Campaign</div>
 
-              <div class="email-slide-title">Marwick — Listing Campaign</div>
+              <div class="email-slide-title">Marwick · Listing Campaign</div>
               <div class="email-slide-desc">Editorial campaign email for the Marwick listing. Built to communicate luxury positioning and drive direct buyer enquiries.</div>
               <a href="emails/marwick.html" target="_blank" class="email-view-btn">View Full Email ↗</a>
             </div>
@@ -1034,7 +1039,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
             </div>
             <div class="email-slide-meta">
               <div class="email-slide-tag">Property Campaign</div>
-              <div class="email-slide-title">Genstar — Listing Campaign</div>
+              <div class="email-slide-title">Genstar · Listing Campaign</div>
               <div class="email-slide-desc">Property campaign email for Genstar. Positioned to highlight value and drive prospective buyer engagement.</div>
               <a href="emails/genstar.html" target="_blank" class="email-view-btn">View Full Email ↗</a>
             </div>
@@ -1062,7 +1067,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       <div>
         <div class="blog-meta"><span class="blog-cat">AI &amp; Marketing</span><div class="blog-dot"></div><span class="blog-date">June 15, 2025</span></div>
         <div class="blog-title">Agentic AI vs Traditional SEO</div>
-        <div class="blog-excerpt">80% of consumers now rely on AI-generated results for at least 40% of their searches. Traditional SEO is facing its most existential threat yet — and the marketers who understand what's replacing it will be the ones still standing.</div>
+        <div class="blog-excerpt">80% of consumers now rely on AI-generated results for at least 40% of their searches. Traditional SEO is facing its most existential threat yet, and the marketers who understand what's replacing it will be the ones still standing.</div>
         <div class="blog-read-more">Read Article →</div>
       </div>
       <div class="blog-arrow">→</div>
@@ -1070,8 +1075,17 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
     <a class="blog-card" href="https://novelsignaturehomes.com/blog/woodland-heights-houston-the-neighborhood-that-rewards-the-right-buyer/" target="_blank">
       <div>
         <div class="blog-meta"><span class="blog-cat">Real Estate</span><div class="blog-dot"></div><span class="blog-date">Novel Signature Homes</span></div>
-        <div class="blog-title">Woodland Heights, Houston — The Neighborhood That Rewards the Right Buyer</div>
-        <div class="blog-excerpt">A deep dive into one of Houston's most character-rich neighborhoods — why Woodland Heights continues to attract discerning buyers and what makes it worth a closer look.</div>
+        <div class="blog-title">Woodland Heights, Houston: The Neighborhood That Rewards the Right Buyer</div>
+        <div class="blog-excerpt">A deep dive into one of Houston's most character-rich neighborhoods, why Woodland Heights continues to attract discerning buyers and what makes it worth a closer look.</div>
+        <div class="blog-read-more">Read Article →</div>
+      </div>
+      <div class="blog-arrow">→</div>
+    </a>
+    <a class="blog-card" href="https://noveldreamhomes.com/blog/buying-a-home-in-texas-guide/" target="_blank">
+      <div>
+        <div class="blog-meta"><span class="blog-cat">Real Estate</span><div class="blog-dot"></div><span class="blog-date">Novel Dream Homes · Mar 2026</span></div>
+        <div class="blog-title">Buying a Home in Texas: 6 Things to Keep in Mind</div>
+        <div class="blog-excerpt">On the surface, buying a home in Texas looks simple. The reality shows up months after move-in. A practical guide to layout, build quality, ongoing costs and the surroundings that decide whether a house that photographs well actually lives well.</div>
         <div class="blog-read-more">Read Article →</div>
       </div>
       <div class="blog-arrow">→</div>
@@ -1080,7 +1094,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
       <div>
         <div class="blog-meta"><span class="blog-cat">More Writing</span><div class="blog-dot"></div><span class="blog-date">wanderwitty.wordpress.com</span></div>
         <div class="blog-title">View All Posts on WanderWitty</div>
-        <div class="blog-excerpt">More articles on marketing, travel, brand strategy and everything in between — on my personal blog.</div>
+        <div class="blog-excerpt">More articles on marketing, travel, brand strategy and everything in between, on my personal blog.</div>
         <div class="blog-read-more">Visit Blog →</div>
       </div>
       <div class="blog-arrow">→</div>
@@ -1161,8 +1175,7 @@ function moveCarousel(id, dir) {
   const s = carousels[id];
   goCarousel(id, Math.max(0, Math.min(s.total - 1, s.index + dir)));
 }
-initCarousel('noAw', 3);
-initCarousel('noRt', 2);
+// Performance ad creatives are now static grids (no carousel).
 // NSH Render Carousel
 let nshIndex = 0;
 const nshTotal = 5;
@@ -1219,6 +1232,13 @@ function filterCreatives(btn, cat) {
     card.style.display = (cat==='all' || card.dataset.cat===cat) ? 'block' : 'none';
   });
 }
+// Hero parallax (home): subtle dot-grid drift with the cursor
+(function(){
+  const h=document.querySelector('#page-home .hero'); if(!h) return;
+  const g=h.querySelector('.dot-grid'); if(!g) return;
+  h.addEventListener('mousemove',e=>{const r=h.getBoundingClientRect();const dx=(e.clientX-r.left-r.width/2)/r.width;const dy=(e.clientY-r.top-r.height/2)/r.height;g.style.transform='translate('+(dx*18).toFixed(1)+'px,'+(dy*18).toFixed(1)+'px)';});
+  h.addEventListener('mouseleave',()=>{g.style.transform='translate(0,0)';});
+})();
 </script>
 </body>
 </html>
