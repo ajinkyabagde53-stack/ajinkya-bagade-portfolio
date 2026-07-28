@@ -72,9 +72,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;justify-content
 .btn-o{border:1px solid rgba(29,158,117,0.4);color:var(--teal-pale);background:none;}
 .btn-o:hover{border-color:var(--teal-light);background:rgba(29,158,117,0.08);transform:translateY(-2px);}
 .hero-stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(29,158,117,0.15);padding-top:56px;gap:0;opacity:0;animation:fadeUp 0.8s 0.95s forwards;}
-.stat{padding:0 32px 0 0;border-right:1px solid rgba(29,158,117,0.1);}
-.stat:last-child{border-right:none;}
-.stat:first-child{padding-left:0;}
+.stat{padding:0 20px 0 40px;border-left:1px solid rgba(29,158,117,0.1);}
+.stat:first-child{padding-left:0;border-left:none;}
 .stat-n{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,6vw,72px);font-weight:300;color:var(--teal-light);line-height:1;letter-spacing:-1px;}
 .stat-l{font-size:13px;color:var(--gray);margin-top:10px;font-weight:300;}
 /* MARQUEE */
@@ -322,7 +321,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
   .nav-btn{padding:8px 10px;font-size:9px;}
   .hero,.about-strip,.page-hero,.cases-list,.creatives-grid,.brochures-section,.email-grid,.blogs-list,.contact-section,.filter-bar,.creds-section{padding-left:24px;padding-right:24px;}
   .hero-stats{grid-template-columns:repeat(2,1fr);gap:32px;}
-  .stat{border-right:none;padding:0;}
+  .stat{border-right:none;border-left:none;padding:0;}
   .skills-grid,.creatives-grid,.brochures-grid{grid-template-columns:1fr;}
   .email-grid{grid-template-columns:1fr;}
   .about-strip{grid-template-columns:1fr;gap:40px;}
