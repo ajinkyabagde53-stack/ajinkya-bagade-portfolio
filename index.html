@@ -285,6 +285,31 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
 .no-goal-carousel{display:flex;align-items:center;gap:16px;max-width:560px;}
 .no-goal-carousel .carousel-arrow{width:40px;height:40px;font-size:22px;flex-shrink:0;}
 @media(max-width:768px){.phase-strip{grid-template-columns:1fr;}.c02-metrics{grid-template-columns:1fr;}}
+/* ARTIFACTS */
+.artifacts-wrap{max-width:1100px;margin:0 auto;padding:70px 56px 90px;}
+.artifacts-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;}
+.artifact-card{position:relative;background:linear-gradient(180deg,var(--dark2),var(--dark3));border:1px solid rgba(29,158,117,0.14);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform 0.35s ease,border-color 0.35s ease,box-shadow 0.35s ease;}
+.artifact-card:hover{transform:translateY(-4px);border-color:rgba(29,158,117,0.4);box-shadow:0 24px 60px rgba(0,0,0,0.4);}
+.artifact-preview{position:relative;height:240px;overflow:hidden;background:radial-gradient(circle at 30% 20%,rgba(29,158,117,0.12),transparent 60%),var(--dark);border-bottom:1px solid rgba(29,158,117,0.1);}
+.artifact-preview iframe{position:absolute;top:0;left:0;width:250%;height:250%;border:0;transform:scale(0.4);transform-origin:top left;pointer-events:none;}
+.artifact-preview .launch-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(10,26,21,0.5);opacity:0;transition:opacity 0.3s ease;text-decoration:none;}
+.artifact-card:hover .launch-overlay{opacity:1;}
+.launch-overlay span{font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--teal-pale);border:1px solid var(--teal-light);border-radius:30px;padding:12px 26px;background:rgba(10,26,21,0.5);backdrop-filter:blur(4px);}
+.artifact-badge{position:absolute;top:14px;left:14px;z-index:2;font-size:9.5px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal-pale);background:rgba(10,26,21,0.72);border:1px solid rgba(29,158,117,0.3);border-radius:30px;padding:5px 12px;backdrop-filter:blur(6px);pointer-events:none;}
+.artifact-body{padding:26px 28px 30px;display:flex;flex-direction:column;flex:1;}
+.artifact-title{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:400;color:var(--teal-pale);line-height:1.05;margin-bottom:10px;}
+.artifact-desc{font-size:14px;font-weight:300;color:var(--gray-light);line-height:1.65;margin-bottom:20px;}
+.artifact-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px;}
+.artifact-tag{font-size:10px;font-weight:500;letter-spacing:0.5px;color:var(--teal-light);background:rgba(29,158,117,0.08);border:1px solid rgba(29,158,117,0.16);border-radius:4px;padding:5px 10px;}
+.artifact-cta{margin-top:auto;display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.artifact-btn{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;padding:12px 22px;border-radius:4px;background:var(--teal-light);color:var(--dark);text-decoration:none;transition:background 0.25s,transform 0.2s;}
+.artifact-btn:hover{background:var(--teal-pale);transform:translateY(-2px);}
+.artifact-meta-note{font-size:11px;color:var(--gray);font-weight:300;}
+.artifact-ghost{grid-column:1 / -1;border:1px dashed rgba(29,158,117,0.22);border-radius:14px;display:flex;align-items:center;justify-content:center;gap:16px;text-align:left;padding:26px 30px;background:rgba(16,31,25,0.4);}
+.artifact-ghost .ghost-plus{font-size:26px;color:var(--teal-light);font-weight:200;line-height:1;}
+.artifact-ghost .ghost-text{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--gray-light);}
+.artifact-ghost .ghost-sub{font-size:12px;color:var(--gray);font-weight:300;}
+@media(max-width:768px){.artifacts-wrap{padding:50px 24px 70px;}.artifacts-grid{grid-template-columns:1fr;}.artifact-preview{height:200px;}.artifact-ghost{flex-direction:column;text-align:center;}}
 /* --- upgrades --- */
 .hero .dot-grid{inset:-40px;transition:transform .25s ease-out;}
 .perf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px;}
@@ -346,6 +371,7 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
     <button class="nav-btn active" onclick="showPage('home')">Home</button>
     <button class="nav-btn" onclick="showPage('cases')">Case Studies</button>
     <button class="nav-btn" onclick="showPage('ads')">Paid Ads</button>
+    <button class="nav-btn" onclick="showPage('artifacts')">Artifacts</button>
     <button class="nav-btn" onclick="showPage('creatives')">Creatives</button>
     <button class="nav-btn" onclick="showPage('emails')">Email Templates</button>
     <button class="nav-btn" onclick="showPage('blogs')">Blogs</button>
@@ -790,6 +816,79 @@ footer p{font-size:11px;color:var(--gray);letter-spacing:0.5px;}
   </div>
   <footer><p>© 2026 Ajinkya Bagade</p><div class="footer-dot"></div><p>Team Lead - Marketing</p></footer>
 </div>
+<!-- ═══ ARTIFACTS ═══ -->
+<div class="page" id="page-artifacts">
+  <div class="page-hero">
+    <div class="dot-grid"></div>
+    <div style="max-width:1100px;margin:0 auto;position:relative;">
+      <div class="page-hero-label">Interactive Tools</div>
+      <div class="page-hero-title">Artifacts</div>
+      <div class="page-hero-sub">Working tools I've designed and built, not mockups. Each one runs live in the browser, where marketing thinking meets hands-on execution.</div>
+    </div>
+  </div>
+  <div class="artifacts-wrap">
+    <div class="artifacts-grid">
+
+      <!-- Performance Cockpit -->
+      <div class="artifact-card reveal">
+        <div class="artifact-preview">
+          <div class="artifact-badge">Live Tool · Paid-Media Analytics</div>
+          <iframe src="performance-cockpit/" loading="lazy" tabindex="-1" title="Performance Cockpit preview"></iframe>
+          <a class="launch-overlay" href="performance-cockpit/" target="_blank" rel="noopener"><span>Launch Tool ↗</span></a>
+        </div>
+        <div class="artifact-body">
+          <div class="artifact-title">Performance Cockpit</div>
+          <div class="artifact-desc">A paid-media command centre for Microsoft, Google and Meta ads. Turns raw spend into decisions: funnel diagnostics, a ranked action queue and cost-per-lead trends, with report uploads and one-click Excel export.</div>
+          <div class="artifact-tags">
+            <span class="artifact-tag">Funnel diagnostics</span>
+            <span class="artifact-tag">Action queue</span>
+            <span class="artifact-tag">Multi-channel</span>
+            <span class="artifact-tag">Report upload</span>
+            <span class="artifact-tag">Excel export</span>
+          </div>
+          <div class="artifact-cta">
+            <a class="artifact-btn" href="performance-cockpit/" target="_blank" rel="noopener">Launch Tool ↗</a>
+            <span class="artifact-meta-note">Runs in your browser · no install</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Waypoint -->
+      <div class="artifact-card reveal">
+        <div class="artifact-preview">
+          <div class="artifact-badge">Live Demo · Dynamic QR Studio</div>
+          <iframe src="waypoint/" loading="lazy" tabindex="-1" title="Waypoint preview"></iframe>
+          <a class="launch-overlay" href="waypoint/" target="_blank" rel="noopener"><span>Launch Tool ↗</span></a>
+        </div>
+        <div class="artifact-body">
+          <div class="artifact-title">Waypoint</div>
+          <div class="artifact-desc">A dynamic QR studio: re-pointable links, hosted contact cards with one-tap save, and instant Wi-Fi and URL codes. Generate a real, scannable code and download a working contact card, live in the page.</div>
+          <div class="artifact-tags">
+            <span class="artifact-tag">Dynamic QR</span>
+            <span class="artifact-tag">vCard one-tap</span>
+            <span class="artifact-tag">Wi-Fi codes</span>
+            <span class="artifact-tag">Cloudflare Worker</span>
+          </div>
+          <div class="artifact-cta">
+            <a class="artifact-btn" href="waypoint/" target="_blank" rel="noopener">Launch Tool ↗</a>
+            <span class="artifact-meta-note">Interactive demo · runs in your browser</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="artifact-ghost reveal">
+        <span class="ghost-plus">+</span>
+        <div>
+          <div class="ghost-text">More tools in the workshop</div>
+          <div class="ghost-sub">New interactive artifacts are added here as they ship.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer><p>© 2026 Ajinkya Bagade</p><div class="footer-dot"></div><p>Team Lead - Marketing</p></footer>
+</div>
+
 <!-- ═══ CREATIVES ═══ -->
 <div class="page" id="page-creatives">
   <div class="page-hero">
@@ -1113,7 +1212,7 @@ document.querySelectorAll('button,a,.case-card,.blog-card,.creative-card,.brochu
   el.addEventListener('mouseenter', () => { cursor.style.width='28px'; cursor.style.height='28px'; cursor.style.opacity='0.5'; });
   el.addEventListener('mouseleave', () => { cursor.style.width='12px'; cursor.style.height='12px'; cursor.style.opacity='1'; });
 });
-const pages = ['home','cases','ads','creatives','emails','blogs'];
+const pages = ['home','cases','ads','artifacts','creatives','emails','blogs'];
 function showPage(id) {
   pages.forEach(p => {
     const el = document.getElementById('page-' + p);
